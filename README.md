@@ -1,4 +1,4 @@
-# Apex 2.2.4
+# Apex 2.2.5
 
 Single-File-PWA für Hypertrophie-Training im Home-Gym. Alle Daten bleiben lokal auf dem Gerät (localStorage), Backup per JSON.
 

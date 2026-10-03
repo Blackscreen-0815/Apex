@@ -1,6 +1,6 @@
 /* Apex Service Worker – offline-first, ohne externe Anfragen
    Bei jeder Änderung an index.html die VERSION erhöhen, damit Nutzer das Update bekommen. */
-const VERSION = 'v2.2.4';
+const VERSION = 'v2.2.5';
 const SHELL = `apex-shell-${VERSION}`;
 const RUNTIME = `apex-runtime-${VERSION}`;
 const SHELL_FILES = [
