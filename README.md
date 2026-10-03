@@ -1,4 +1,4 @@
-# Apex 2.0.0
+# Apex 2.2.4
 
 Single-File-PWA für Hypertrophie-Training im Home-Gym. Alle Daten bleiben lokal auf dem Gerät (localStorage), Backup per JSON.
 
@@ -27,6 +27,31 @@ apex/
 - Themes: Standard (Deep Charcoal mit Neon-Orange, Neon-Cyan oder Silber), Rose Gold (dunkel oder hell), Babyblau
 - Sprache Deutsch oder Englisch, Einheiten metrisch (kg, cm) oder US (lb, in); Gewichte werden intern immer in kg gespeichert
 - Import/Export als JSON, übernimmt auch Backups und lokale Daten aus Hypertrophy Pro
+- Rechtliches im Profil: Impressum und Datenschutzerklärung (Vorlagen), eigenständig abrufbar unter `?legal=imprint` und `?legal=privacy`
+- Werbung: ein AdMob-Interstitial nach dem Schließen der Workout-Zusammenfassung, nur in der Android-App (Ordner `android-app`), nie während des Trainings. Web-Version werbefrei
+- Level-System: 15 XP pro Workout, Bonus für Rekorde (max. +15 pro Workout) und Serien (+5 ab 3, +10 ab 10 Workouts in Folge). Level n ab 7,5 × n × (n − 1) XP
+- Belohnungen pro Level: Farbdesigns (Volt, Ember, Gold), Profilsymbole, Avatar-Accessoires, goldener Profilrahmen, freche Sprüche beim Level-up
+- Avatar (Tamagotchi-Prinzip): wird beim ersten Start erstellt, entwickelt sich in vier Stufen mit dem Level, Laune und Energie hängen vom Trainingsrhythmus ab
+- Achievements und Freunde-Rangliste über Freundeskarten (Link, Code oder QR-Code), ohne Server
+- Gesundheitsdaten: Serviceschicht für Health Connect (Samsung Health über Health Connect) vorbereitet, aktiv nur in der Android-App mit Plugin
+- Kein CDN mehr: Tailwind ist vorkompiliert eingebettet, die Web-Version stellt keine Anfragen an Dritte
+
+## Update einspielen (GitHub Pages)
+
+1. Im Repository „Add file“ → „Upload files“, geänderte Dateien bzw. Ordner hineinziehen, committen. Gleiche Namen überschreiben.
+2. In `sw.js` steht die `VERSION`. Sie ist bei jeder Lieferung bereits erhöht; wenn du selbst etwas änderst, erhöhe sie.
+3. App auf dem Handy öffnen: Die neue Version lädt im Hintergrund („Neue Version geladen“), beim nächsten Öffnen ist sie aktiv.
+4. Android-App mit Werbung: im Ordner `android-app` `npm run sync`, neue .aab mit höherem `versionCode` bauen und hochladen.
+
+## Vor der Veröffentlichung ausfüllen
+
+Ganz oben im Script von `index.html` (Abschnitt „0 · Konfiguration“):
+
+- `LEGAL`: Name, Anschrift, E-Mail, Telefon, optional USt-IdNr. Leere Felder erscheinen in der App orange.
+- `ADS_CONFIG`: AdMob-Anzeigenblock-ID, `testMode` erst nach Freigabe auf `false`.
+- `APP_URL`: öffentliche Adresse der Web-App, wird in Freundes-Links und QR-Codes verwendet.
+
+Datenschutz-URL für die Play Console: `https://<benutzername>.github.io/apex/?legal=privacy`
 
 ## Hosting
 
@@ -74,10 +99,10 @@ Mit Play App Signing signiert Google die App neu. Den SHA-256-Fingerabdruck aus 
 
 ### Play Console
 
-- Datenschutz / Datensicherheit: Die App erhebt und überträgt keine Nutzerdaten. Einzige externe Anfrage ist das Tailwind-CSS-Script von `cdn.tailwindcss.com` (danach aus dem Cache).
-- Eine Datenschutzerklärung (URL) wird trotzdem verlangt.
+- Datensicherheit: Die Web-Version (PWABuilder) erhebt und überträgt keine Nutzerdaten. Für die Version mit Werbung gilt `android-app/README.md`.
+- Datenschutzerklärung (URL): `https://<benutzername>.github.io/apex/?legal=privacy`
 - Kategorie: Gesundheit & Fitness.
 
-## Optional: komplett ohne CDN
+## CSS ändern
 
-Für maximale Robustheit Tailwind lokal bauen (`npx tailwindcss -o tailwind.css --minify` mit der Konfiguration aus `index.html`), das `<script src="https://cdn.tailwindcss.com">` durch `<link rel="stylesheet" href="tailwind.css">` ersetzen und `tailwind.css` in `SHELL_FILES` von `sw.js` aufnehmen.
+Das Tailwind-CSS ist vorkompiliert im `<style id="tw">` eingebettet. Neue Tailwind-Klassen wirken erst nach einem Neubau mit der Konfiguration aus `tailwind.config.js` (`npx tailwindcss -c tailwind.config.js -o tw.css --minify`, Inhalt dann in den Style-Block kopieren).

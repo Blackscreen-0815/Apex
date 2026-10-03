@@ -2,23 +2,50 @@
   "id": "./",
   "name": "Apex",
   "short_name": "Apex",
-  "description": "Hypertrophie-Tracker fürs Home-Gym: Trainingsplan, Satz-Tracking mit Ghost-Records, Pause-Timer, Scheiben-, Aufwärm- und 1RM-Rechner. Komplett offline.",
+  "description": "Hypertrophie-Tracker: Satz-Tracking mit Ghost-Records, Level-System, Avatar, Freundeskarten, Scheiben-, Aufwärm- und 1RM-Rechner. Komplett offline.",
   "lang": "de-DE",
   "dir": "ltr",
   "start_url": "./?source=pwa",
   "scope": "./",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui"],
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "orientation": "portrait",
   "theme_color": "#0f1115",
   "background_color": "#0f1115",
-  "categories": ["health", "fitness", "sports"],
+  "categories": [
+    "health",
+    "fitness",
+    "sports"
+  ],
   "prefer_related_applications": false,
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
-    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
   "shortcuts": [
     {
@@ -26,14 +53,70 @@
       "short_name": "Training",
       "description": "Workout starten oder fortsetzen",
       "url": "./?tab=workout&source=shortcut",
-      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Tools",
       "short_name": "Tools",
       "description": "Scheiben-, Aufwärm- und 1RM-Rechner, Timer",
       "url": "./?tab=tools&source=shortcut",
-      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/home.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Heute mit Avatar und Training des Tages"
+    },
+    {
+      "src": "screenshots/workout.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Satz abschließen mit Ghost-Werten"
+    },
+    {
+      "src": "screenshots/levelup.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Level-up mit Belohnungen"
+    },
+    {
+      "src": "screenshots/avatar.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Avatar anpassen"
+    },
+    {
+      "src": "screenshots/friends.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Freunde-Rangliste"
+    },
+    {
+      "src": "screenshots/tools.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Scheiben-Rechner"
     }
   ]
 }

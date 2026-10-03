@@ -4,39 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Apex</title>
-<meta name="description" content="Apex – Hypertrophie-Tracker fürs Home-Gym: Trainingsplan, Satz-Tracking mit Ghost-Records, Pause-Timer, Scheiben-, Aufwärm- und 1RM-Rechner. Komplett offline.">
+<meta name="description" content="Apex – Hypertrophie-Tracker: Trainingsplan, Satz-Tracking mit Ghost-Records, Pause-Timer, Scheiben-, Aufwärm- und 1RM-Rechner. Komplett offline.">
 <meta name="theme-color" content="#0f1115">
 <meta name="color-scheme" content="dark light">
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  /* Alle Farben kommen aus CSS-Variablen des aktiven Themes */
-  if (window.tailwind) {
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            bg: 'rgb(var(--bg) / <alpha-value>)',
-            card: 'rgb(var(--card) / <alpha-value>)',
-            label: 'rgb(var(--label) / <alpha-value>)',
-            label2: 'rgb(var(--label2) / var(--label2-a))',
-            label3: 'rgb(var(--label2) / var(--label3-a))',
-            sep: 'rgb(var(--sep) / var(--sep-a))',
-            accent: 'rgb(var(--accent) / <alpha-value>)',
-            ink: 'rgb(var(--accent-ink) / <alpha-value>)',
-            onaccent: 'rgb(var(--on-accent) / <alpha-value>)',
-            green: 'rgb(var(--green) / <alpha-value>)',
-            orange: 'rgb(var(--orange) / <alpha-value>)',
-            red: 'rgb(var(--red) / <alpha-value>)'
-          }
-        }
-      }
-    };
-  }
-</script>
+<style id="tw">/* Tailwind CSS v3, vorkompiliert (keine externe Anfrage) */
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.visible{visibility:visible}.collapse{visibility:collapse}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.inset-x-0{left:0;right:0}.bottom-0{bottom:0}.left-3{left:.75rem}.right-\[calc\(50\%-22px\)\]{right:calc(50% - 22px)}.top-1\/2{top:50%}.top-2{top:.5rem}.z-40{z-index:40}.z-50{z-index:50}.z-\[60\]{z-index:60}.z-\[65\]{z-index:65}.z-\[70\]{z-index:70}.-mx-2{margin-left:-.5rem;margin-right:-.5rem}.-mx-4{margin-left:-1rem;margin-right:-1rem}.mx-auto{margin-left:auto;margin-right:auto}.-mr-1{margin-right:-.25rem}.-mr-1\.5{margin-right:-.375rem}.-mt-1{margin-top:-.25rem}.mb-0\.5{margin-bottom:.125rem}.mb-1\.5{margin-bottom:.375rem}.mb-2{margin-bottom:.5rem}.mb-2\.5{margin-bottom:.625rem}.mb-3{margin-bottom:.75rem}.ml-1{margin-left:.25rem}.mr-1{margin-right:.25rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:.5rem}.mt-2\.5{margin-top:.625rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.mt-9{margin-top:2.25rem}.block{display:block}.flex{display:flex}.table{display:table}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1/1}.\!h-12{height:3rem!important}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-11{height:2.75rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-20{height:5rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[18px\]{height:18px}.h-\[22px\]{height:22px}.h-\[23px\]{height:23px}.h-\[30px\]{height:30px}.h-\[3px\]{height:3px}.h-\[5px\]{height:5px}.h-auto{height:auto}.h-full{height:100%}.max-h-\[92vh\]{max-height:92vh}.\!min-h-0{min-height:0!important}.min-h-screen{min-height:100vh}.w-1{width:.25rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-20{width:5rem}.w-24{width:6rem}.w-28{width:7rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-\[18px\]{width:18px}.w-\[22px\]{width:22px}.w-\[23px\]{width:23px}.w-\[2px\]{width:2px}.w-\[30px\]{width:30px}.w-\[4\.6ch\]{width:4.6ch}.w-\[7\.5rem\]{width:7.5rem}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.\!min-w-\[40px\]{min-width:40px!important}.min-w-0{min-width:0}.max-w-\[260px\]{max-width:260px}.max-w-\[280px\]{max-width:280px}.max-w-\[320px\]{max-width:320px}.max-w-\[85\%\]{max-width:85%}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.flex-shrink{flex-shrink:1}.shrink-0{flex-shrink:0}.grow{flex-grow:1}.border-collapse{border-collapse:collapse}.-translate-y-1\/2{--tw-translate-y:-50%}.-translate-y-1\/2,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.resize-none{resize:none}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))}.grid-cols-\[1\.5rem_minmax\(0\2c 1fr\)_3\.75rem_3\.75rem_2\.75rem\]{grid-template-columns:1.5rem minmax(0,1fr) 3.75rem 3.75rem 2.75rem}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.\!items-start{align-items:flex-start!important}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:.125rem}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-y-4{row-gap:1rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.overscroll-contain{overscroll-behavior:contain}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.\!rounded-\[16px\]{border-radius:16px!important}.rounded-\[10px\]{border-radius:10px}.rounded-\[12px\]{border-radius:12px}.rounded-\[14px\]{border-radius:14px}.rounded-\[20px\]{border-radius:20px}.rounded-\[22px\]{border-radius:22px}.rounded-\[7px\]{border-radius:7px}.rounded-full{border-radius:9999px}.rounded-t-\[22px\]{border-top-left-radius:22px;border-top-right-radius:22px}.border{border-width:1px}.border-\[1\.5px\]{border-width:1.5px}.border-accent{--tw-border-opacity:1;border-color:rgb(var(--accent)/var(--tw-border-opacity,1))}.border-label3{border-color:rgb(var(--label2)/var(--label3-a))}.bg-accent{--tw-bg-opacity:1;background-color:rgb(var(--accent)/var(--tw-bg-opacity,1))}.bg-accent\/10{background-color:rgb(var(--accent)/.1)}.bg-accent\/20{background-color:rgb(var(--accent)/.2)}.bg-accent\/30{background-color:rgb(var(--accent)/.3)}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity,1))}.bg-black\/45{background-color:rgba(0,0,0,.45)}.bg-green{--tw-bg-opacity:1;background-color:rgb(var(--green)/var(--tw-bg-opacity,1))}.bg-green\/10{background-color:rgb(var(--green)/.1)}.bg-label3{background-color:rgb(var(--label2)/var(--label3-a))}.bg-red{--tw-bg-opacity:1;background-color:rgb(var(--red)/var(--tw-bg-opacity,1))}.object-cover{-o-object-fit:cover;object-fit:cover}.p-1\.5{padding:.375rem}.p-2{padding:.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.\!px-0{padding-left:0!important;padding-right:0!important}.\!px-5{padding-left:1.25rem!important;padding-right:1.25rem!important}.\!py-2{padding-top:.5rem!important;padding-bottom:.5rem!important}.\!py-2\.5{padding-top:.625rem!important;padding-bottom:.625rem!important}.\!py-3\.5{padding-top:.875rem!important;padding-bottom:.875rem!important}.\!py-4{padding-top:1rem!important;padding-bottom:1rem!important}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-px{padding-top:1px;padding-bottom:1px}.\!pl-5{padding-left:1.25rem!important}.pb-1\.5{padding-bottom:.375rem}.pb-2{padding-bottom:.5rem}.pb-3{padding-bottom:.75rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pl-4{padding-left:1rem}.pr-2\.5{padding-right:.625rem}.pt-0\.5{padding-top:.125rem}.pt-2{padding-top:.5rem}.pt-2\.5{padding-top:.625rem}.pt-3{padding-top:.75rem}.pt-3\.5{padding-top:.875rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.\!text-\[15px\]{font-size:15px!important}.text-\[10px\]{font-size:10px}.text-\[34px\]{font-size:34px}.text-\[46px\]{font-size:46px}.text-\[58px\]{font-size:58px}.font-semibold{font-weight:600}.leading-3{line-height:.75rem}.leading-\[40px\]{line-height:40px}.leading-\[42px\]{line-height:42px}.leading-\[54px\]{line-height:54px}.leading-\[62px\]{line-height:62px}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity,1))}.text-green{--tw-text-opacity:1;color:rgb(var(--green)/var(--tw-text-opacity,1))}.text-ink{--tw-text-opacity:1;color:rgb(var(--accent-ink)/var(--tw-text-opacity,1))}.text-label2{color:rgb(var(--label2)/var(--label2-a))}.text-label3{color:rgb(var(--label2)/var(--label3-a))}.text-onaccent{--tw-text-opacity:1;color:rgb(var(--on-accent)/var(--tw-text-opacity,1))}.text-orange{--tw-text-opacity:1;color:rgb(var(--orange)/var(--tw-text-opacity,1))}.text-red{--tw-text-opacity:1;color:rgb(var(--red)/var(--tw-text-opacity,1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-40{opacity:.4}.opacity-50{opacity:.5}.opacity-75{opacity:.75}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline{outline-style:solid}.ring{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.blur{--tw-blur:blur(8px)}.blur,.grayscale{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.grayscale{--tw-grayscale:grayscale(100%)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}
+</style>
 <style>
   /* ---------- Themes ---------- */
   :root, :root[data-theme="charcoal"] {
@@ -55,6 +32,9 @@
     --glow: 0 12px 30px -10px rgb(var(--accent) / .65);
   }
   :root[data-theme="charcoal"][data-accent="cyan"] { --accent: 0 214 255; --accent-ink: 72 226 255; --on-accent: 0 20 28; }
+  :root[data-theme="charcoal"][data-accent="volt"] { --accent: 198 255 61; --accent-ink: 205 255 92; --on-accent: 16 24 0; }
+  :root[data-theme="charcoal"][data-accent="ember"] { --accent: 255 90 54; --accent-ink: 255 120 92; --on-accent: 26 6 2; }
+  :root[data-theme="charcoal"][data-accent="gold"] { --accent: 245 196 81; --accent-ink: 247 207 112; --on-accent: 26 18 0; }
   :root[data-theme="charcoal"][data-accent="silver"] { --accent: 214 220 230; --accent-ink: 226 231 239; --on-accent: 17 19 23; --glow: 0 12px 30px -12px rgba(214, 220, 230, .4); }
   :root[data-theme="rose-dark"] {
     color-scheme: dark;
@@ -216,6 +196,19 @@
   .hrange::-webkit-slider-thumb { -webkit-appearance: none; height: 26px; width: 26px; margin-top: -10px; border-radius: 50%; background: #fff; box-shadow: 0 2px 7px rgba(0, 0, 0, .28), 0 0 0 .5px rgba(0, 0, 0, .08); }
   .hrange::-moz-range-thumb { height: 26px; width: 26px; border: 0; border-radius: 50%; background: #fff; box-shadow: 0 2px 7px rgba(0, 0, 0, .28), 0 0 0 .5px rgba(0, 0, 0, .08); }
   .hrange:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px rgb(var(--accent) / .5); }
+  .legal { font-size: 15px; line-height: 21px; letter-spacing: -0.24px; }
+  .legal h3 { margin: 22px 0 6px; font-size: 17px; line-height: 22px; font-weight: 600; letter-spacing: -0.41px; }
+  .legal h3:first-child { margin-top: 0; }
+  .legal p, .legal ul { margin: 0 0 10px; color: rgb(var(--label)); }
+  .legal ul { padding-left: 18px; list-style: disc; }
+  .legal li { margin: 3px 0; }
+  .legal a { color: rgb(var(--accent-ink)); text-decoration: underline; text-underline-offset: 2px; word-break: break-word; }
+  .legal .muted { color: rgb(var(--label2) / var(--label2-a)); }
+  .legal .ph { color: rgb(var(--orange)); font-weight: 600; }
+  .bubble { position: relative; border-radius: 16px 16px 16px 4px; background: rgb(var(--well) / calc(var(--well-a) * 1.6)); }
+  .avatar-frame-gold { box-shadow: 0 0 0 3px rgb(var(--card)), 0 0 0 5px #f5c451; }
+  .qrbox svg { display: block; width: 100%; height: auto; }
+  .qrbox svg rect, .qrbox svg path { shape-rendering: crispEdges; }
   .sheet { --bg: var(--sheet-bg); --card: var(--sheet-card); background: rgb(var(--bg)); }
   .sheet-pad { padding-bottom: calc(1.75rem + env(safe-area-inset-bottom, 0px)); }
 
@@ -261,17 +254,45 @@
 'use strict';
 /* =====================================================================
    APEX – Single-File PWA
-   1 Utils, Sprache, Einheiten   2 Übungen, Plan, Texte   3 Speicher
-   4 Logik   5 UI-Bausteine   6 Views   7 Tools   8 Timer   9 Aktionen   10 Start
+   0 Konfiguration (Rechtliches, Werbung)   1 Utils, Sprache, Einheiten   2 Übungen, Plan, Texte
+   3 Speicher   4 Logik   5 UI-Bausteine   6 Views   7 Tools   8 Timer, Werbung   9 Aktionen   10 Start
    ===================================================================== */
+
+/* ---------- 0 · Konfiguration ----------
+   HIER AUSFÜLLEN: Angaben für Impressum und Datenschutzerklärung.
+   Leere Felder erscheinen in der App orange als Platzhalter. */
+const LEGAL = {
+  name: 'Jannik Schwachta',  // Vor- und Nachname (Pflicht)
+  company: '',         // optional: Geschäftsbezeichnung oder Firma, falls vorhanden
+  street: 'Hochdorferstr. 15', // Straße und Hausnummer (ladungsfähige Anschrift, kein Postfach)
+  zipCity: '82278 Althegnenberg', // PLZ und Ort
+  country: 'Deutschland',
+  email: 'apex.fitness.group1@gmail.com', // E-Mail-Adresse (Pflicht)
+  phone: '',           // optional: Telefonnummer, leer = wird nicht angezeigt
+  vatId: '',           // optional: USt-IdNr. nach § 27a UStG, sonst leer lassen
+  updated: 'Oktober 2026'
+};
+
+/* Öffentliche Adresse der Web-App: wird für Freundes-Links und QR-Codes verwendet */
+const APP_URL = 'https://blackscreen-0815.github.io/Apex/';
+
+/* Werbung (nur in der Android-App mit AdMob-Plugin, nie im Browser) */
+const ADS_CONFIG = {
+  enabled: true,
+  testMode: true,                                           // bis zur Freigabe in AdMob auf true lassen
+  interstitialId: 'ca-app-pub-0000000000000000/0000000000', // deine Interstitial-Anzeigenblock-ID aus AdMob
+  testInterstitialId: 'ca-app-pub-3940256099942544/1033173712', // offizielle Google-Test-ID
+  minMinutesBetween: 20                                     // höchstens eine Anzeige pro 20 Minuten
+};
 
 /* ---------- 1 · Utils, Sprache, Einheiten ---------- */
 const APP_NAME = 'Apex';
-const APP_VERSION = '2.0.0';
+const APP_VERSION = '2.2.4';
 const STORE_KEY = 'apex:data';
 const LEGACY_KEY = 'hypertrophy-pro:data';
-const XP = { set: 10, beat: 5, pr: 25, finish: 50, habit: 5, habitAll: 10 };
-const LEVEL_BASE = 150;
+/* XP: 15 pro abgeschlossenem Workout, Bonus für Rekorde und Serien */
+const XP = { workout: 15, pr: 5, prMax: 3, streak3: 5, streak10: 10 }; // Rekordbonus höchstens 3 × 5 XP pro Workout
+const LEVEL_STEP = 15; // Level n erreicht man bei 7,5 × n × (n − 1) XP: jedes Level braucht ein Workout mehr
 const MAX_GAP_DAYS = 4; // mehr als 3 Ruhetage am Stück beenden die Serie
 const LB_PER_KG = 2.20462262;
 const CM_PER_IN = 2.54;
@@ -369,6 +390,18 @@ const WD_LETTER = { de: ['S', 'M', 'D', 'M', 'D', 'F', 'S'], en: ['S', 'M', 'T',
 const wdLong = (i) => L(WD_LONG)[i];
 const wdLetter = (i) => L(WD_LETTER)[i];
 
+/* Base64url für Freundeskarten (UTF-8-sicher) */
+function b64urlEncode(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = ''; bytes.forEach((b) => { bin += String.fromCharCode(b); });
+  return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+function b64urlDecode(s) {
+  const b64 = s.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((s.length + 3) % 4);
+  const bin = atob(b64);
+  return new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0)));
+}
+
 const ICONS = {
   check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
@@ -378,7 +411,14 @@ const ICONS = {
   chevron: '<path d="M9 5.5l6.5 6.5L9 18.5"/>',
   updown: '<path d="M8 9.5l4-4 4 4M8 14.5l4 4 4-4"/>',
   search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/>',
-  play: '<path d="M8 5.5v13l10.5-6.5z"/>'
+  play: '<path d="M8 5.5v13l10.5-6.5z"/>',
+  lock: '<rect x="5.5" y="10.5" width="13" height="9.5" rx="2.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/>',
+  share: '<path d="M12 15V4M8 7.5L12 3.5l4 4"/><path d="M6 11v7.5A1.5 1.5 0 0 0 7.5 20h9a1.5 1.5 0 0 0 1.5-1.5V11"/>',
+  copy: '<rect x="8.5" y="8.5" width="11" height="11" rx="2.5"/><path d="M15.5 8.5V6A1.5 1.5 0 0 0 14 4.5H6A1.5 1.5 0 0 0 4.5 6v8A1.5 1.5 0 0 0 6 15.5h2.5"/>',
+  camera: '<path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2l1.5-2h6l1.5 2h2A1.5 1.5 0 0 1 20 8.5v9A1.5 1.5 0 0 1 18.5 19h-13A1.5 1.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/>',
+  users: '<circle cx="9" cy="9" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><circle cx="16.5" cy="8" r="2.6"/><path d="M15.5 13.6a4.6 4.6 0 0 1 5 4.4"/>',
+  medal: '<circle cx="12" cy="14.5" r="5"/><path d="M8.5 10.8L6 3.5h4l2 4.5 2-4.5h4l-2.5 7.3"/>',
+  heart: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>'
 };
 function icon(name, cls = 'h-5 w-5', filled = false, sw = 2) {
   const attrs = filled
@@ -1056,9 +1096,10 @@ const GEAR = {
   anchor: { de: 'Sofa zum Fixieren', en: 'Sofa as anchor' }, pad: { de: 'Polster', en: 'Pad' }
 };
 
+/* deF: weibliche Form, falls abweichend */
 const TITLES = [
-  [1, { de: 'Rookie', en: 'Rookie' }], [3, { de: 'Eisen-Lehrling', en: 'Iron Apprentice' }], [5, { de: 'Pump-Jäger', en: 'Pump Hunter' }],
-  [8, { de: 'Volumen-Veteran', en: 'Volume Veteran' }], [12, { de: 'V-Taper-Architekt', en: 'V-Taper Architect' }],
+  [1, { de: 'Rookie', en: 'Rookie' }], [3, { de: 'Eisen-Lehrling', deF: 'Eisen-Schülerin', en: 'Iron Apprentice' }], [5, { de: 'Pump-Jäger', deF: 'Pump-Jägerin', en: 'Pump Hunter' }],
+  [8, { de: 'Volumen-Veteran', deF: 'Volumen-Veteranin', en: 'Volume Veteran' }], [12, { de: 'V-Taper-Architekt', deF: 'V-Taper-Architektin', en: 'V-Taper Architect' }],
   [16, { de: 'Hypertrophie-Profi', en: 'Hypertrophy Pro' }], [20, { de: 'Masse-Monster', en: 'Mass Monster' }],
   [25, { de: 'Eiserne Legende', en: 'Iron Legend' }], [30, { de: 'Apex', en: 'Apex' }]
 ];
@@ -1071,11 +1112,109 @@ const THEMES = {
   rose: { bg: '#151013', card: '#221b1f', bgLight: '#faf5f6', cardLight: '#ffffff', accent: '#f0a3b4', accentLight: '#de688c', label: { de: 'Rose Gold', en: 'Rose gold' }, sub: { de: 'Rosé-Akzent', en: 'Rose accent' } },
   baby: { bg: '#f1f7fd', card: '#ffffff', accent: '#89c4f4', label: { de: 'Babyblau', en: 'Baby blue' }, sub: { de: 'Blau und Weiß', en: 'Blue and white' } }
 };
+/* lv: ab diesem Level freigeschaltet (Belohnung), ohne lv immer verfügbar */
 const ACCENTS = {
   orange: { hex: '#ff7a1a', label: { de: 'Neon-Orange', en: 'Neon orange' } },
   cyan: { hex: '#00d6ff', label: { de: 'Neon-Cyan', en: 'Neon cyan' } },
-  silver: { hex: '#d6dce6', label: { de: 'Silber', en: 'Silver' } }
+  silver: { hex: '#d6dce6', label: { de: 'Silber', en: 'Silver' } },
+  volt: { hex: '#c6ff3d', lv: 5, label: { de: 'Volt', en: 'Volt' } },
+  ember: { hex: '#ff5a36', lv: 12, label: { de: 'Ember', en: 'Ember' } },
+  gold: { hex: '#f5c451', lv: 30, label: { de: 'Gold', en: 'Gold' } }
 };
+
+/* ---------- Gamification: Belohnungen, Sprüche, Avatar, Achievements ---------- */
+const SYMBOLS = {
+  none: { lv: 1, label: { de: 'Keins', en: 'None' }, svg: '' },
+  dumbbell: { lv: 2, label: { de: 'Hantel', en: 'Dumbbell' }, svg: '<path d="M6.5 6.5v11M17.5 6.5v11M3.5 9.5v5M20.5 9.5v5M6.5 12h11"/>' },
+  bolt: { lv: 5, label: { de: 'Blitz', en: 'Bolt' }, svg: '<path d="M13 3L5 13.5h6L10 21l8.5-10.5h-6z"/>' },
+  flame: { lv: 18, label: { de: 'Flamme', en: 'Flame' }, svg: '<path d="M12 21c-3.9 0-6.5-2.6-6.5-6.2 0-3.9 3.2-5.8 3.6-9.8 2.9 1.6 4.4 4.1 4.6 6.3.9-.8 1.4-2 1.5-3.2 2 1.6 3.3 4 3.3 6.7C18.5 18.4 15.9 21 12 21z"/>' },
+  crown: { lv: 30, label: { de: 'Krone', en: 'Crown' }, svg: '<path d="M4 17.5L3 7.5l5 4 4-6.5 4 6.5 5-4-1 10z"/><path d="M4.5 20.5h15"/>' }
+};
+const AVATAR_SKINS = [
+  { hex: '#f0c49b', label: { de: 'Hell', en: 'Light' } },
+  { hex: '#d49a6a', label: { de: 'Mittel', en: 'Medium' } },
+  { hex: '#9c6440', label: { de: 'Dunkel', en: 'Dark' } },
+  { hex: '#6a4130', label: { de: 'Sehr dunkel', en: 'Deep' } },
+  { hex: '#8ee6c4', label: { de: 'Minze', en: 'Mint' } }
+];
+/* Haarfarben (frei wählbar). Frisuren und Outfits sind als Felder im Avatar vorbereitet und können später als Belohnung dazukommen */
+const AVATAR_HAIR = [
+  { hex: '#2b2f36', label: { de: 'Schwarz', en: 'Black' } },
+  { hex: '#6b4226', label: { de: 'Braun', en: 'Brown' } },
+  { hex: '#d9a63a', label: { de: 'Blond', en: 'Blonde' } }
+];
+const AVATAR_ACCS = {
+  none: { lv: 1, label: { de: 'Ohne', en: 'None' } },
+  band: { lv: 3, label: { de: 'Stirnband', en: 'Headband' } },
+  cap: { lv: 8, label: { de: 'Kappe', en: 'Cap' } },
+  vest: { lv: 15, label: { de: 'Taktische Weste', en: 'Tactical vest' } }
+};
+const AVATAR_STAGES = [
+  { lv: 1, label: { de: 'Rookie', en: 'Rookie' }, labelF: { de: 'Rookie', en: 'Rookie' } },
+  { lv: 10, label: { de: 'Athlet', en: 'Athlete' }, labelF: { de: 'Athletin', en: 'Athlete' } },
+  { lv: 20, label: { de: 'Krieger', en: 'Warrior' }, labelF: { de: 'Kriegerin', en: 'Warrior' } },
+  { lv: 30, label: { de: 'Apex', en: 'Apex' }, labelF: { de: 'Apex', en: 'Apex' } }
+];
+const AVATAR_BODIES = { m: { label: { de: 'Männlich', en: 'Male' }, name: 'Rex' }, f: { label: { de: 'Weiblich', en: 'Female' }, name: 'Roxy' } };
+const stageLabel = (i, body = S.avatar.body) => L(body === 'f' ? AVATAR_STAGES[i].labelF : AVATAR_STAGES[i].label);
+/* Belohnungen pro Level (kosmetisch) */
+const REWARDS = [
+  { lv: 2, kind: 'symbol', id: 'dumbbell' },
+  { lv: 3, kind: 'acc', id: 'band' },
+  { lv: 5, kind: 'accent', id: 'volt' }, { lv: 5, kind: 'symbol', id: 'bolt' },
+  { lv: 8, kind: 'acc', id: 'cap' },
+  { lv: 10, kind: 'stage', id: 1 },
+  { lv: 12, kind: 'accent', id: 'ember' },
+  { lv: 15, kind: 'acc', id: 'vest' },
+  { lv: 18, kind: 'symbol', id: 'flame' },
+  { lv: 20, kind: 'stage', id: 2 },
+  { lv: 25, kind: 'frame', id: 'gold' },
+  { lv: 30, kind: 'stage', id: 3 }, { lv: 30, kind: 'accent', id: 'gold' }, { lv: 30, kind: 'symbol', id: 'crown' }
+];
+/* Freche Sprüche beim Level-up: feste für Meilensteine, sonst aus dem Pool */
+const LEVEL_QUOTES = {
+  1: { de: 'Der Weg des Kriegers beginnt!', en: 'The warrior’s path begins!' },
+  2: { de: 'Die Hanteln haben dich bemerkt.', en: 'The dumbbells have noticed you.' },
+  3: { de: 'Muskelkater ist nur Schwäche, die den Körper verlässt.', en: 'Soreness is just weakness leaving the body.' },
+  5: { de: 'Dein Sofa vermisst dich. Es wird damit leben müssen.', en: 'Your couch misses you. It’ll have to live with it.' },
+  8: { de: 'Deine Ärmel verhandeln um mehr Platz.', en: 'Your sleeves are negotiating for more room.' },
+  10: { de: 'Zweistellig! Ab jetzt wird es ernst.', en: 'Double digits! Now it gets serious.' },
+  12: { de: 'Türrahmen werden langsam eng.', en: 'Door frames are getting tight.' },
+  15: { de: 'Die Klimmzugstange hat Respekt vor dir.', en: 'The pull-up bar respects you now.' },
+  20: { de: 'Der Spiegel fragt nach Autogrammen.', en: 'The mirror is asking for autographs.' },
+  25: { de: 'Die Hantel nennt dich beim Vornamen.', en: 'The barbell calls you by your first name.' },
+  30: { de: 'Apex erreicht. Ab hier ist die Luft dünn.', en: 'Apex reached. The air is thin up here.' }
+};
+const QUOTE_POOL = [
+  { de: 'Schwer heben, leicht nehmen.', en: 'Lift heavy, take it easy.' },
+  { de: 'Ausreden wiegen nichts. Hanteln schon.', en: 'Excuses weigh nothing. Dumbbells do.' },
+  { de: 'Noch ein Level, und die Waage gibt auf.', en: 'One more level and the scale gives up.' },
+  { de: 'Progressive Overload? Eher progressive Überlegenheit.', en: 'Progressive overload? More like progressive dominance.' },
+  { de: 'Deine Muskeln haben die Nachricht erhalten.', en: 'Your muscles got the message.' },
+  { de: 'Couch-Potato war gestern.', en: 'Couch potato was yesterday.' }
+];
+/* Avatar-Sprüche je nach Trainingsrhythmus */
+const MOOD_LINES = {
+  happy: [{ de: 'Stark! Morgen wieder? Ich bin dabei.', en: 'Strong! Again tomorrow? I’m in.' }, { de: 'Ich spüre den Pump bis hierher.', en: 'I can feel the pump from here.' }],
+  ok: [{ de: 'Na, heute vielleicht Beine?', en: 'So, legs today maybe?' }, { de: 'Ich mache schon mal Dehnübungen.', en: 'I’m stretching already.' }],
+  sleepy: [{ de: 'Zzz … weck mich, wenn du wieder trainierst.', en: 'Zzz … wake me when you train again.' }, { de: 'Die Hanteln setzen schon Staub an.', en: 'The dumbbells are gathering dust.' }],
+  fresh: [{ de: 'Hi! Ich bin bereit für unser erstes Workout.', en: 'Hi! I’m ready for our first workout.' }]
+};
+/* Achievements: werden aus deinen Daten berechnet */
+const ACHIEVEMENTS = [
+  { id: 'first', label: { de: 'Erstes Workout', en: 'First workout' }, test: (p) => p.workouts >= 1 },
+  { id: 'w10', label: { de: '10 Workouts', en: '10 workouts' }, test: (p) => p.workouts >= 10 },
+  { id: 'w50', label: { de: '50 Workouts', en: '50 workouts' }, test: (p) => p.workouts >= 50 },
+  { id: 'w100', label: { de: '100 Workouts', en: '100 workouts' }, test: (p) => p.workouts >= 100 },
+  { id: 's5', label: { de: 'Serie von 5', en: 'Streak of 5' }, test: (p) => p.bestStreak >= 5 },
+  { id: 's12', label: { de: 'Serie von 12', en: 'Streak of 12' }, test: (p) => p.bestStreak >= 12 },
+  { id: 'pr1', label: { de: 'Erster Rekord', en: 'First record' }, test: (p) => p.prs >= 1 },
+  { id: 'pr25', label: { de: '25 Rekorde', en: '25 records' }, test: (p) => p.prs >= 25 },
+  { id: 'lv10', label: { de: 'Level 10', en: 'Level 10' }, test: (p) => p.level >= 10 },
+  { id: 'lv20', label: { de: 'Level 20', en: 'Level 20' }, test: (p) => p.level >= 20 },
+  { id: 'vol', label: { de: '100 Tonnen bewegt', en: '100 tonnes lifted' }, test: (p) => p.volume >= 100000 },
+  { id: 'habits7', label: { de: '7 perfekte Tage', en: '7 perfect days' }, test: (p) => p.perfectDays >= 7 }
+];
 
 /* ---------- 2b · Texte DE / EN ---------- */
 const I18N = {
@@ -1169,7 +1308,7 @@ const I18N = {
     load_plates: 'Scheiben laden',
     toast_save_failed: 'Speichern fehlgeschlagen. Ist der Speicher voll?',
     toast_enter_reps: 'Erst die Wiederholungen eintragen.', toast_weight_implausible: 'Das Gewicht wirkt unplausibel.',
-    toast_new_record: 'Neuer Rekord, +{n} XP', toast_ghost_beaten: 'Ghost geschlagen, +{n} XP', xp_gain: '+{n} XP',
+    toast_new_record: 'Neuer Rekord, +{n} XP', toast_new_record_plain: 'Neuer Rekord!', toast_ghost_beaten: 'Ghost geschlagen.', xp_gain: '+{n} XP',
     level_up: 'Level {l}: {title}', workout_running: '{name} läuft noch.',
     confirm_noset_title: 'Noch kein Satz abgeschlossen',
     confirm_noset_text: 'Ohne abgeschlossene Sätze wird nichts gespeichert. Workout verwerfen?',
@@ -1195,7 +1334,43 @@ const I18N = {
     toast_new_cycle: 'Neuer Zyklus gestartet.',
     confirm_reset_title: 'Alle Daten löschen?',
     confirm_reset_text: 'Workouts, Rekorde, Gewicht und Einstellungen werden unwiderruflich gelöscht. Sichere vorher ein Backup.',
-    toast_reset: 'Alle Daten gelöscht.', toast_installed: 'App installiert.', toast_update: 'Neue Version geladen.'
+    toast_reset: 'Alle Daten gelöscht.', toast_installed: 'App installiert.', toast_update: 'Neue Version geladen.',
+    av_energy: 'Energie', av_mood: 'Laune', av_power: 'Kraft', avatar: 'Avatar', avatar_customize: 'Avatar anpassen',
+    av_name: 'Name', av_evolution: 'Entwicklung', av_color: 'Farbe', av_accessory: 'Accessoire',
+    av_evolution_hint: 'Dein Avatar wächst automatisch mit deinem Level.',
+    av_create_title: 'Erstelle deinen Begleiter', av_create_sub: 'Wächst mit jedem Workout und wird müde, wenn du zu lange pausierst.', av_body: 'Figur', av_hair: 'Haarfarbe', av_create_btn: 'Los geht’s',
+    profile_symbol: 'Profilsymbol', profile_frame: 'Goldener Profilrahmen', from_level: 'ab Level {l}', locked_toast: 'Wird mit Level {l} freigeschaltet.',
+    display_name: 'Anzeigename', display_name_ph: 'Dein Name', display_name_hint: 'Der Anzeigename erscheint auf deiner Freundeskarte. Leer bleibt der Avatar-Name.',
+    next_reward: 'Nächste Belohnung: Level {l}, {r}', unlocked: 'Freigeschaltet', levelup_title: 'Level-up!',
+    rw_symbol: 'Profilsymbol', rw_acc: 'Accessoire', rw_accent: 'Farbdesign', rw_stage: 'Avatar-Stufe', rw_frame: 'Profilrahmen', rw_frame_gold: 'Gold',
+    xp_workout: 'Workout', xp_records: 'Rekorde', xp_streak: 'Serie',
+    habits_note: 'Stell über den Tag ein, was du schon hast. Die Werte bleiben nur auf deinem Gerät.',
+    achievements: 'Achievements', new_achievements: 'Neue Achievements', ach_short: '{a} von {b} Achievements',
+    friends: 'Freunde', friends_sub: ({ n }) => (n === 1 ? '1 Freund' : `${n} Freunde`), ranking: 'Rangliste',
+    share_card: 'Karte teilen', add_friend: 'Freund hinzufügen', you: 'du',
+    friend_stats: '{w} Workouts · beste Serie {s} · {p} Rekorde', as_of: 'Stand {d}',
+    friends_empty: 'Noch keine Freunde. Teile deine Karte oder füge die Karte eines Freundes hinzu.',
+    friends_foot: 'Freundeskarten sind Momentaufnahmen und bleiben nur auf deinem Gerät. Für neue Werte teilt ihr eure Karten einfach erneut.',
+    remove_friend: '{name} entfernen', remove_friend_text: 'Die Karte wird von diesem Gerät gelöscht.',
+    my_card: 'Deine Freundeskarte', my_card_sub: 'QR-Code scannen lassen oder Link teilen',
+    my_card_foot: 'Die Karte enthält Name, Avatar, Level, Workouts, beste Serie, Rekorde und Achievements. Trainingsdetails und Körperdaten bleiben privat.',
+    share: 'Teilen', copy_link: 'Link kopieren', share_text: 'Mein Apex-Fortschritt. Füg mich als Freund hinzu:',
+    add_friend_ph: 'Code oder Link einfügen', add: 'Hinzufügen', add_friend_hint: 'Füge den Link oder Code ein, den dein Freund mit dir geteilt hat. Ein QR-Code lässt sich auch mit der Handykamera öffnen.',
+    scan_qr: 'QR-Code scannen', scan_hint: 'Halte den Code deines Freundes in den Rahmen.',
+    add_friend_q: '{name} hinzufügen?', add_friend_q_text: 'Level {l}. Die Karte wird nur auf deinem Gerät gespeichert.',
+    toast_friend_added: '{name} hinzugefügt.', toast_friend_updated: '{name} aktualisiert.', toast_friend_invalid: 'Kein gültiger Freundescode.',
+    toast_friend_self: 'Das ist deine eigene Karte.', toast_link_copied: 'Link kopiert.', toast_camera_failed: 'Kamera nicht verfügbar.',
+    health_data: 'Gesundheitsdaten', health_status_web: 'Nur in der Android-App verfügbar', health_status_missing: 'Schnittstelle vorbereitet, Anbindung folgt',
+    health_status_ready: 'Bereit zum Verbinden', health_status_connected: 'Verbunden, zuletzt {d}',
+    health_connect: 'Verbinden', health_sync: 'Abgleichen', health_disconnect: 'Verbindung trennen',
+    health_samsung_hint: 'Samsung Health teilt seine Daten über Health Connect.',
+    health_importWeight: 'Körpergewicht importieren', health_exportWorkouts: 'Workouts übertragen',
+    health_foot: 'Der Austausch läuft nur auf deinem Gerät zwischen Health Connect und Apex. Apex lädt nichts auf Server hoch.',
+    toast_health_failed: 'Verbindung zu Health Connect fehlgeschlagen.', toast_health_synced: ({ n }) => `Abgeglichen, ${n} neue Gewichtseinträge.`,
+    legal: 'Rechtliches', privacy_settings: 'Datenschutz-Einstellungen', privacy_settings_hint: 'Einwilligung für Werbung ändern',
+    ads_foot_native: 'Apex finanziert sich über eine Anzeige nach abgeschlossenen Workouts. Während des Trainings gibt es keine Werbung.',
+    ads_foot_web: 'Diese Version ist werbefrei. Die Android-App zeigt nach abgeschlossenen Workouts eine Anzeige, nie während des Trainings.',
+    legal_lang_note: '', open_app: 'Zur App', toast_privacy_unavailable: 'Datenschutz-Einstellungen gerade nicht verfügbar.'
   },
   en: {
     nav_home: 'Today', nav_workout: 'Workout', nav_tools: 'Tools', nav_library: 'Exercises', nav_profile: 'Profile',
@@ -1287,7 +1462,7 @@ const I18N = {
     load_plates: 'Load plates',
     toast_save_failed: 'Saving failed. Is storage full?',
     toast_enter_reps: 'Enter your reps first.', toast_weight_implausible: 'That weight looks implausible.',
-    toast_new_record: 'New record, +{n} XP', toast_ghost_beaten: 'Ghost beaten, +{n} XP', xp_gain: '+{n} XP',
+    toast_new_record: 'New record, +{n} XP', toast_new_record_plain: 'New record!', toast_ghost_beaten: 'Ghost beaten.', xp_gain: '+{n} XP',
     level_up: 'Level {l}: {title}', workout_running: '{name} is still running.',
     confirm_noset_title: 'No set completed yet',
     confirm_noset_text: 'Nothing is saved without completed sets. Discard the workout?',
@@ -1313,8 +1488,140 @@ const I18N = {
     toast_new_cycle: 'New cycle started.',
     confirm_reset_title: 'Delete all data?',
     confirm_reset_text: 'Workouts, records, body weight and settings will be permanently deleted. Save a backup first.',
-    toast_reset: 'All data deleted.', toast_installed: 'App installed.', toast_update: 'New version loaded.'
+    toast_reset: 'All data deleted.', toast_installed: 'App installed.', toast_update: 'New version loaded.',
+    av_energy: 'Energy', av_mood: 'Mood', av_power: 'Power', avatar: 'Avatar', avatar_customize: 'Customize avatar',
+    av_name: 'Name', av_evolution: 'Evolution', av_color: 'Color', av_accessory: 'Accessory',
+    av_evolution_hint: 'Your avatar grows automatically with your level.',
+    av_create_title: 'Create your companion', av_create_sub: 'Grows with every workout and gets sleepy if you pause too long.', av_body: 'Figure', av_hair: 'Hair color', av_create_btn: 'Let’s go',
+    profile_symbol: 'Profile icon', profile_frame: 'Gold profile frame', from_level: 'from level {l}', locked_toast: 'Unlocks at level {l}.',
+    display_name: 'Display name', display_name_ph: 'Your name', display_name_hint: 'Your display name appears on your friend card. Empty uses the avatar’s name.',
+    next_reward: 'Next reward: level {l}, {r}', unlocked: 'Unlocked', levelup_title: 'Level up!',
+    rw_symbol: 'Profile icon', rw_acc: 'Accessory', rw_accent: 'Color design', rw_stage: 'Avatar stage', rw_frame: 'Profile frame', rw_frame_gold: 'Gold',
+    xp_workout: 'Workout', xp_records: 'Records', xp_streak: 'Streak',
+    habits_note: 'Update what you’ve had throughout the day. The values stay on your device.',
+    achievements: 'Achievements', new_achievements: 'New achievements', ach_short: '{a} of {b} achievements',
+    friends: 'Friends', friends_sub: ({ n }) => (n === 1 ? '1 friend' : `${n} friends`), ranking: 'Leaderboard',
+    share_card: 'Share card', add_friend: 'Add friend', you: 'you',
+    friend_stats: '{w} workouts · best streak {s} · {p} records', as_of: 'As of {d}',
+    friends_empty: 'No friends yet. Share your card or add a friend’s card.',
+    friends_foot: 'Friend cards are snapshots and stay on your device only. Share your cards again to update them.',
+    remove_friend: 'Remove {name}', remove_friend_text: 'The card will be deleted from this device.',
+    my_card: 'Your friend card', my_card_sub: 'Let someone scan the QR code or share the link',
+    my_card_foot: 'The card contains name, avatar, level, workouts, best streak, records and achievements. Training details and body data stay private.',
+    share: 'Share', copy_link: 'Copy link', share_text: 'My Apex progress. Add me as a friend:',
+    add_friend_ph: 'Paste code or link', add: 'Add', add_friend_hint: 'Paste the link or code your friend shared with you. A QR code also opens with your phone’s camera.',
+    scan_qr: 'Scan QR code', scan_hint: 'Hold your friend’s code inside the frame.',
+    add_friend_q: 'Add {name}?', add_friend_q_text: 'Level {l}. The card is stored on your device only.',
+    toast_friend_added: '{name} added.', toast_friend_updated: '{name} updated.', toast_friend_invalid: 'Not a valid friend code.',
+    toast_friend_self: 'That’s your own card.', toast_link_copied: 'Link copied.', toast_camera_failed: 'Camera not available.',
+    health_data: 'Health data', health_status_web: 'Only available in the Android app', health_status_missing: 'Interface ready, integration coming',
+    health_status_ready: 'Ready to connect', health_status_connected: 'Connected, last sync {d}',
+    health_connect: 'Connect', health_sync: 'Sync', health_disconnect: 'Disconnect',
+    health_samsung_hint: 'Samsung Health shares its data via Health Connect.',
+    health_importWeight: 'Import body weight', health_exportWorkouts: 'Export workouts',
+    health_foot: 'The exchange happens only on your device between Health Connect and Apex. Apex uploads nothing to servers.',
+    toast_health_failed: 'Connecting to Health Connect failed.', toast_health_synced: ({ n }) => `Synced, ${n} new weight entries.`,
+    legal: 'Legal', privacy_settings: 'Privacy settings', privacy_settings_hint: 'Change your ad consent',
+    ads_foot_native: 'Apex is funded by one ad after completed workouts. There are no ads during training.',
+    ads_foot_web: 'This version is ad-free. The Android app shows an ad after completed workouts, never during training.',
+    legal_lang_note: 'Legal texts are provided in German.', open_app: 'Open app', toast_privacy_unavailable: 'Privacy settings are unavailable right now.'
   }
+};
+
+/* ---------- 2c · Rechtstexte (Vorlagen, Deutsch) ---------- */
+function ph(value, label) { return value ? esc(value) : `<span class="ph">[${esc(label)}]</span>`; }
+function legalAddressHTML() {
+  return `${ph(LEGAL.name, 'Vor- und Nachname')}${LEGAL.company ? `<br>${esc(LEGAL.company)}` : ''}<br>
+    ${ph(LEGAL.street, 'Straße und Hausnummer')}<br>${ph(LEGAL.zipCity, 'PLZ und Ort')}<br>${esc(LEGAL.country)}`;
+}
+function legalMailHTML() {
+  return LEGAL.email ? `<a href="mailto:${esc(LEGAL.email)}">${esc(LEGAL.email)}</a>` : ph('', 'E-Mail-Adresse');
+}
+
+function legalImprintHTML() {
+  return `
+    <h3>Angaben gemäß § 5 DDG</h3>
+    <p>${legalAddressHTML()}</p>
+
+    <h3>Kontakt</h3>
+    <p>${LEGAL.phone ? `Telefon: ${esc(LEGAL.phone)}<br>` : ''}E-Mail: ${legalMailHTML()}</p>
+
+    ${LEGAL.vatId ? `<h3>Umsatzsteuer-ID</h3><p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: ${esc(LEGAL.vatId)}</p>` : ''}
+
+    <h3>Gewerblicher Betrieb</h3>
+    <p>Die App „Apex“ wird gewerblich betrieben und über Werbeanzeigen finanziert.</p>
+
+    <h3>Verbraucherstreitbeilegung</h3>
+    <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+    <h3>Hinweis zu Trainingsinhalten</h3>
+    <p>Die Trainings-, Ernährungs- und Übungsinformationen in Apex dienen der allgemeinen Information und ersetzen keine ärztliche Beratung oder persönliche Trainerbetreuung. Kläre vor Trainingsbeginn ab, ob gesundheitliche Gründe dagegensprechen, und trainiere im Rahmen deiner Belastbarkeit.</p>
+
+    <h3>Haftung für Inhalte</h3>
+    <p>Die Inhalte wurden mit Sorgfalt erstellt. Für Richtigkeit, Vollständigkeit und Aktualität können wir jedoch keine Gewähr übernehmen. Unsere Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für Vorsatz und grobe Fahrlässigkeit bleibt unberührt.</p>
+
+    <p class="muted">Stand: ${esc(LEGAL.updated)}</p>`;
+}
+
+function legalPrivacyHTML() {
+  return `
+    <h3>1. Verantwortlicher</h3>
+    <p>${legalAddressHTML()}<br>E-Mail: ${legalMailHTML()}</p>
+
+    <h3>2. Das Wichtigste in Kürze</h3>
+    <ul>
+      <li>Apex braucht kein Konto. Deine Trainings-, Körper- und Profildaten werden ausschließlich lokal auf deinem Gerät gespeichert. Wir haben keinen Zugriff darauf.</li>
+      <li>Diese Daten werden nicht an uns, an Werbepartner oder sonstige Dritte übermittelt.</li>
+      <li>Die Android-App zeigt nach abgeschlossenen Workouts Werbung über Google AdMob. Personenbezogene Daten werden dafür nur im Rahmen deiner Einwilligung verarbeitet, die du jederzeit ändern kannst.</li>
+    </ul>
+
+    <h3>3. Fitness- und Gesundheitsdaten auf deinem Gerät</h3>
+    <p>Wenn du Apex nutzt, speichert die App folgende Daten im lokalen Speicher deines Geräts: Trainingseinheiten, Sätze, Wiederholungen und Lasten, Körpergewicht, Größe und Alter, Tagesziele (Wasser, Protein, Kreatin, Schlaf) sowie deine Einstellungen.</p>
+    <p>Einige dieser Angaben, etwa Körpergewicht oder Schlaf, können Gesundheitsdaten im Sinne von Art. 9 DSGVO sein. Die Verarbeitung findet ausschließlich auf deinem Gerät statt und dient allein der Funktion der App für dich. Eine Übertragung an uns oder Dritte erfolgt nicht.</p>
+    <p>Auf deinen Wunsch erstellt die App eine Backup-Datei. Wo du sie speicherst oder mit wem du sie teilst, entscheidest du selbst.</p>
+    <p>Löschen kannst du alle Daten jederzeit über Profil → „Alle Daten löschen“, über das Löschen der App-Daten in den Android-Einstellungen oder durch Deinstallation der App.</p>
+
+    <h3>4. Freundeskarten</h3>
+    <p>Du kannst eine Freundeskarte als Link, Code oder QR-Code teilen. Sie enthält deinen Anzeige- bzw. Avatar-Namen, das Aussehen deines Avatars, Level, Erfahrungspunkte, Anzahl der Workouts, beste Serie, Anzahl der Rekorde, Achievements, Profilsymbol und das Erstellungsdatum. Trainingsdetails, Gewichte, Körperdaten und Tagesziele sind nicht enthalten.</p>
+    <p>Geteilt wird nur, wenn du es selbst auslöst, über den von dir gewählten Weg (z. B. Messenger). Wir betreiben dafür keinen Server und erhalten diese Daten nicht. Karten deiner Freunde werden nur lokal auf deinem Gerät gespeichert. Du kannst sie jederzeit in der Freundesliste entfernen.</p>
+
+    <h3>5. Kamera</h3>
+    <p>Zum Scannen eines QR-Codes greift die App nach deiner Erlaubnis auf die Kamera zu. Das Bild wird nur auf deinem Gerät ausgewertet, weder gespeichert noch übertragen. Den Zugriff kannst du jederzeit in den Einstellungen deines Geräts bzw. Browsers widerrufen.</p>
+
+    <h3>6. Health Connect (nur Android-App, optional)</h3>
+    <p>Wenn du die Verbindung ausdrücklich aktivierst, liest Apex über die Android-Schnittstelle Health Connect dein Körpergewicht und kann deine Workouts dorthin übertragen. Der Austausch findet nur auf deinem Gerät statt, Daten werden nicht an uns übermittelt. Rechtsgrundlage ist deine ausdrückliche Einwilligung (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO), die du durch Trennen der Verbindung in der App oder in den Health-Connect-Einstellungen widerrufen kannst. Andere Apps, die du an Health Connect angebunden hast (z. B. Samsung Health), verarbeiten Daten nach ihren eigenen Datenschutzbestimmungen.</p>
+
+    <h3>7. Werbung mit Google AdMob (nur Android-App)</h3>
+    <p>Die Android-App finanziert sich über Vollbildanzeigen, die nach einem abgeschlossenen Workout erscheinen können. Während des Trainings wird keine Werbung angezeigt. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“).</p>
+    <p>Beim ersten Start fragt die App über die Einwilligungsverwaltung von Google (User Messaging Platform) nach deiner Einwilligung. Mit deiner Einwilligung können folgende Daten verarbeitet und auf deinem Gerät gespeichert oder ausgelesen werden: Werbe-ID deines Geräts, IP-Adresse, Geräte- und App-Informationen (z. B. Modell, Betriebssystem, Sprache), ungefährer Standort auf Basis der IP-Adresse sowie Informationen über die Interaktion mit Anzeigen.</p>
+    <p>Zwecke sind die Auslieferung und Messung von Anzeigen, die Begrenzung der Anzeigenhäufigkeit, die Betrugsprävention und, sofern du zustimmst, die Personalisierung von Anzeigen. Deine Fitness- und Gesundheitsdaten werden dafür nicht verwendet und nicht an Google übermittelt.</p>
+    <p>Rechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und, für den Zugriff auf Informationen auf deinem Gerät, § 25 Abs. 1 TDDDG. Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen oder ändern: Profil → Rechtliches → „Datenschutz-Einstellungen“. Ohne Einwilligung werden keine personalisierten Anzeigen ausgespielt.</p>
+    <p>Dabei kann eine Übermittlung an Google LLC in den USA erfolgen. Diese stützt sich auf den Angemessenheitsbeschluss der EU-Kommission zum EU-US Data Privacy Framework, soweit der Empfänger zertifiziert ist, und im Übrigen auf Standardvertragsklauseln. Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a> und <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+
+    <h3>8. Bereitstellung über Google Play</h3>
+    <p>Für Download und Updates der Android-App über Google Play verarbeitet Google die dafür nötigen Daten in eigener Verantwortung. Es gilt die Datenschutzerklärung von Google.</p>
+
+    <h3>9. Web-Version und Hosting</h3>
+    <p>Die Web-Version von Apex wird über GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA) bereitgestellt. Beim Aufruf verarbeitet GitHub technisch notwendige Zugriffsdaten wie IP-Adresse, Zeitpunkt und abgerufene Datei, um die Seite auszuliefern und abzusichern. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und stabilen Bereitstellung nach Art. 6 Abs. 1 lit. f DSGVO. Für die Übermittlung in die USA gelten die Ausführungen in Abschnitt 7 entsprechend. Die Web-Version enthält keine Werbung.</p>
+
+    <h3>10. Kontakt per E-Mail</h3>
+    <p>Wenn du uns schreibst, verarbeiten wir deine Angaben zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b oder f DSGVO) und löschen sie, sobald sie nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
+
+    <h3>11. Deine Rechte</h3>
+    <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Eine erteilte Einwilligung kannst du jederzeit widerrufen (Art. 7 Abs. 3). Da wir deine App-Daten nicht speichern, kannst du die meisten dieser Rechte direkt in der App ausüben.</p>
+    <p>Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO), zum Beispiel bei der Behörde deines Wohnorts oder der für uns zuständigen Behörde.</p>
+
+    <h3>12. Altersgrenze</h3>
+    <p>Apex richtet sich an Erwachsene ab 18 Jahren.</p>
+
+    <h3>13. Änderungen</h3>
+    <p>Wir passen diese Erklärung an, wenn sich die App oder die Rechtslage ändert. Es gilt die jeweils in der App veröffentlichte Fassung.</p>
+
+    <p class="muted">Stand: ${esc(LEGAL.updated)}</p>`;
+}
+const LEGAL_PAGES = {
+  imprint: { title: { de: 'Impressum', en: 'Imprint' }, html: legalImprintHTML },
+  privacy: { title: { de: 'Datenschutzerklärung', en: 'Privacy policy' }, html: legalPrivacyHTML }
 };
 
 /* ---------- 3 · Speicher (localStorage) ---------- */
@@ -1328,14 +1635,17 @@ function defaultState() {
   return {
     version: 2,
     createdAt: Date.now(),
-    profile: { bodyweight: 82, height: 186, age: 29 },
+    profile: { bodyweight: 82, height: 186, age: 29, displayName: '', symbol: 'none', frame: false },
+    avatar: { created: false, name: 'Rex', skin: '#f0c49b', acc: 'none', body: 'm', hair: '#2b2f36', style: 'classic', outfit: 'basic' },
+    friends: [],
     settings: {
       lang: 'de', units: 'metric', theme: 'charcoal', accent: 'orange', roseMode: 'dark',
       sound: true, vibrate: true, wakeLock: true, autoTimer: true, restDefault: 90,
       weekMap: ['REST', 'OA', 'UA', 'REST', 'OB', 'UB', 'REST'], // Index 0 = Sonntag
       mesoStart: mondayOf(isoDate()),
       plates: defaultPlates(),
-      vestKg: 10
+      vestKg: 10,
+      health: { provider: 'none', connected: false, importWeight: true, exportWorkouts: false, lastSync: null }
     },
     tools: { tab: 'plates', plateTarget: 45, vestOn: false, invOpen: false, warmWeight: 45, warmMode: 'bar', rmWeight: 40, rmReps: 10, customTimer: 90 },
     sessions: [],
@@ -1344,7 +1654,7 @@ function defaultState() {
     bodyweight: [],
     timer: null,
     lastBackup: null,
-    meta: { lastLevel: 1 }
+    meta: { lastLevel: 1, uid: uid('u'), lastAd: 0 }
   };
 }
 
@@ -1386,8 +1696,19 @@ function migrate(raw) {
   if (!Array.isArray(d.settings.weekMap) || d.settings.weekMap.length !== 7) d.settings.weekMap = base.settings.weekMap.slice();
   d.settings.weekMap = d.settings.weekMap.map((k) => (k === 'REST' || PLAN[k] ? k : 'REST'));
   if (!/^\d{4}-\d{2}-\d{2}$/.test(d.settings.mesoStart || '')) d.settings.mesoStart = base.settings.mesoStart;
+  d.settings.health = { ...base.settings.health, ...(rs.health || {}) };
+  d.avatar = { ...base.avatar, ...(raw.avatar || {}) };
+  if (!AVATAR_SKINS.some((x) => x.hex === d.avatar.skin)) d.avatar.skin = base.avatar.skin;
+  if (!AVATAR_ACCS[d.avatar.acc]) d.avatar.acc = 'none';
+  if (!AVATAR_BODIES[d.avatar.body]) d.avatar.body = 'm';
+  if (!AVATAR_HAIR.some((x) => x.hex === d.avatar.hair)) d.avatar.hair = AVATAR_HAIR[0].hex;
+  d.avatar.name = String(d.avatar.name || 'Rex').slice(0, 20);
+  if (!SYMBOLS[d.profile.symbol]) d.profile.symbol = 'none';
+  d.profile.displayName = String(d.profile.displayName || '').slice(0, 24);
+  d.friends = Array.isArray(raw.friends) ? raw.friends.filter((f) => f && f.id && f.n).map((f) => ({ ...f, bd: f.bd === 'f' ? 'f' : 'm' })).slice(0, 100) : [];
   d.tools = { ...base.tools, ...(raw.tools || {}) };
   d.meta = { ...base.meta, ...(raw.meta || {}) };
+  if (!d.meta.uid) d.meta.uid = base.meta.uid;
   d.sessions = Array.isArray(raw.sessions)
     ? raw.sessions
       .filter((s) => s && s.id && PLAN[s.dayKey] && Array.isArray(s.exercises))
@@ -1474,48 +1795,57 @@ function ghostFor(exId, dayKey, excludeId) {
   return find((s) => s.dayKey === dayKey) || find(() => true);
 }
 
+/* Level n ab 7,5 × n × (n − 1) XP: Level 2 nach einem Workout, jedes weitere Level braucht ein Workout mehr */
 function levelFromXP(xp) {
-  let lv = Math.floor((1 + Math.sqrt(1 + (8 * xp) / LEVEL_BASE)) / 2);
+  let lv = Math.floor((1 + Math.sqrt(1 + (8 * xp) / LEVEL_STEP)) / 2);
   if (lv < 1) lv = 1;
-  const at = (n) => (LEVEL_BASE * (n - 1) * n) / 2;
+  const at = (n) => (LEVEL_STEP * (n - 1) * n) / 2;
   const cur = at(lv), next = at(lv + 1);
   return { level: lv, into: xp - cur, need: next - cur, pct: (xp - cur) / (next - cur) };
 }
-function titleFor(lv) { let x = TITLES[0][1]; for (const [l, n] of TITLES) if (lv >= l) x = n; return L(x); }
+function titleFor(lv, body = S.avatar.body) {
+  let x = TITLES[0][1]; for (const [l, n] of TITLES) if (lv >= l) x = n;
+  return body === 'f' && LANG === 'de' && x.deF ? x.deF : L(x);
+}
+function streakBonus(run) { return run >= 10 ? XP.streak10 : run >= 3 ? XP.streak3 : 0; }
 
-/* XP werden immer aus den Daten berechnet: kein Drift bei Rückgängig, Import oder Löschen */
-function computeProgress() {
-  const sorted = S.sessions.slice().sort((a, b) => a.startedAt - b.startedAt);
+/* XP werden immer aus den Daten berechnet: kein Drift bei Rückgängig, Import oder Löschen.
+   opts.exclude: eine Einheit nicht mitzählen (für „vorher/nachher“ beim Abschluss) */
+function computeProgress(opts = {}) {
+  const sorted = S.sessions.filter((s) => s.id !== opts.exclude).sort((a, b) => a.startedAt - b.startedAt);
   const best = {}, bestSet = {};
-  let xp = 0, sets = 0, volume = 0, workouts = 0, prs = 0;
+  let xp = 0, sets = 0, volume = 0, workouts = 0, prs = 0, run = 0, bestStreak = 0, lastDate = null;
   for (const s of sorted) {
     const bw = s.bw || S.profile.bodyweight;
-    if (s.finishedAt) { workouts++; xp += XP.finish; }
+    let sessionPrs = 0;
+    if (s.finishedAt) {
+      workouts++; xp += XP.workout;
+      run = lastDate && diffDays(lastDate, s.date) <= MAX_GAP_DAYS ? run + 1 : 1;
+      lastDate = s.date;
+      bestStreak = Math.max(bestStreak, run);
+      xp += streakBonus(run);
+    }
     for (const e of s.exercises) {
       if (!EX[e.exId]) continue;
       let sb = -1, sbSet = null;
       for (const x of e.sets) {
         if (!x.done) continue;
-        sets++; xp += XP.set;
-        if (x.beat) xp += XP.beat;
+        sets++;
         volume += (num(x.kg) || 0) * (num(x.reps) || 0);
         const m = setMetric(e.exId, x, bw);
         if (m > sb) { sb = m; sbSet = x; }
       }
       if (!sbSet) continue;
       const prev = best[e.exId];
-      if (prev !== undefined && sb > prev + 1e-6) { xp += XP.pr; prs++; }
+      if (prev !== undefined && sb > prev + 1e-6) { prs++; if (sessionPrs < XP.prMax) xp += XP.pr; sessionPrs++; }
       if (prev === undefined || sb > prev) {
         best[e.exId] = sb;
         bestSet[e.exId] = { kg: num(sbSet.kg) || 0, reps: num(sbSet.reps) || 0, metric: sb, date: s.date };
       }
     }
   }
-  for (const h of Object.values(S.habits)) {
-    const c = HABITS.filter((k) => habitDone(h, k)).length;
-    xp += c * XP.habit + (c === HABITS.length ? XP.habitAll : 0);
-  }
-  return { xp, sets, volume, workouts, prs, best, bestSet, ...levelFromXP(xp) };
+  const perfectDays = Object.values(S.habits).filter((h) => HABITS.every((k) => habitDone(h, k))).length;
+  return { xp, sets, volume, workouts, prs, best, bestSet, bestStreak, perfectDays, ...levelFromXP(xp) };
 }
 
 function streakInfo() {
@@ -1615,7 +1945,6 @@ function sessionSummary(s) {
   }
   return {
     sets, beats: beatsN, volume, prs,
-    xp: sets * XP.set + beatsN * XP.beat + prs.length * XP.pr + (s.finishedAt ? XP.finish : 0),
     durationMs: (s.finishedAt || Date.now()) - s.startedAt
   };
 }
@@ -1708,6 +2037,78 @@ function hToCanon(k, d) { return k === 'water' ? (imperial() ? d * ML_PER_FLOZ :
 function hStep(k) { return k === 'water' ? (imperial() ? 4 : 0.25) : HABIT_CFG[k].step; }
 function hMaxDisp(k) { const st = hStep(k); return Math.floor(hToDisp(k, HABIT_CFG[k].max) / st + 1e-9) * st; }
 function hFmt(k, d) { return k === 'water' && imperial() ? fmtNum(Math.round(d), 0) : fmtNum(Math.round(d * 100) / 100, 2); }
+
+/* ---------- Belohnungen, Avatar, Achievements ---------- */
+function isUnlocked(kind, id, level) {
+  const map = kind === 'accent' ? ACCENTS : kind === 'symbol' ? SYMBOLS : kind === 'acc' ? AVATAR_ACCS : null;
+  const need = map ? (map[id] && map[id].lv) || 1 : 1;
+  return level >= need;
+}
+function rewardsBetween(fromLv, toLv) { return REWARDS.filter((r) => r.lv > fromLv && r.lv <= toLv); }
+function nextReward(level) { return REWARDS.find((r) => r.lv > level) || null; }
+function rewardText(r) {
+  const name = r.kind === 'accent' ? L(ACCENTS[r.id].label) : r.kind === 'symbol' ? L(SYMBOLS[r.id].label)
+    : r.kind === 'acc' ? L(AVATAR_ACCS[r.id].label) : r.kind === 'stage' ? stageLabel(r.id) : t('rw_frame_gold');
+  return { type: t(`rw_${r.kind}`), name };
+}
+function levelQuote(lv) {
+  const q = LEVEL_QUOTES[lv] || QUOTE_POOL[lv % QUOTE_POOL.length];
+  return L(q);
+}
+function avatarStage(level) { let st = 0; AVATAR_STAGES.forEach((x, i) => { if (level >= x.lv) st = i; }); return st; }
+function avatarMood() {
+  if (activeSession()) return 'happy';
+  const last = streakInfo().last;
+  if (!last) return 'fresh';
+  const gap = diffDays(last, isoDate());
+  return gap <= 1 ? 'happy' : gap <= 3 ? 'ok' : 'sleepy';
+}
+function moodLine(mood) {
+  const list = MOOD_LINES[mood] || MOOD_LINES.ok;
+  const day = Math.floor(Date.now() / 86400000);
+  return L(list[day % list.length]);
+}
+function avatarStats(mood, p) {
+  const m = { happy: [92, 95], ok: [60, 66], sleepy: [18, 30], fresh: [80, 85] }[mood] || [60, 60];
+  return { energy: m[0], mood: m[1], power: Math.round(clamp(p.pct, 0.04, 1) * 100) };
+}
+function achievementsFor(p) { return ACHIEVEMENTS.filter((a) => a.test(p)).map((a) => a.id); }
+
+/* ---------- Freundeskarten (ohne Server) ---------- */
+const FRIEND_PREFIX = 'APEX1.';
+function myFriendCard(p = computeProgress()) {
+  return {
+    id: S.meta.uid,
+    n: (S.profile.displayName || S.avatar.name || 'Apex').slice(0, 24),
+    an: S.avatar.name, sk: S.avatar.skin, ac: S.avatar.acc, bd: S.avatar.body, hc: S.avatar.hair,
+    lv: p.level, xp: p.xp, wo: p.workouts, bs: p.bestStreak, pr: p.prs,
+    ach: achievementsFor(p), sy: S.profile.symbol, fr: !!S.profile.frame,
+    up: isoDate()
+  };
+}
+function encodeFriendCard(card) { return FRIEND_PREFIX + b64urlEncode(JSON.stringify(card)); }
+function friendLink(card) { return `${APP_URL}?friend=${encodeFriendCard(card)}`; }
+/* Akzeptiert den Code selbst, einen Link mit ?friend= oder Text, in dem einer davon steckt */
+function decodeFriendCard(input) {
+  const str = String(input || '').trim();
+  const m = str.match(/APEX1\.([A-Za-z0-9_-]+)/);
+  if (!m) return null;
+  try {
+    const c = JSON.parse(b64urlDecode(m[1]));
+    if (!c || typeof c.id !== 'string' || typeof c.n !== 'string') return null;
+    return {
+      id: c.id.slice(0, 40), n: c.n.slice(0, 24), an: String(c.an || '').slice(0, 20),
+      sk: AVATAR_SKINS.some((x) => x.hex === c.sk) ? c.sk : AVATAR_SKINS[0].hex,
+      ac: AVATAR_ACCS[c.ac] ? c.ac : 'none', bd: c.bd === 'f' ? 'f' : 'm',
+      hc: AVATAR_HAIR.some((x) => x.hex === c.hc) ? c.hc : AVATAR_HAIR[0].hex,
+      lv: clamp(Math.round(+c.lv || 1), 1, 999), xp: Math.max(0, Math.round(+c.xp || 0)),
+      wo: Math.max(0, Math.round(+c.wo || 0)), bs: Math.max(0, Math.round(+c.bs || 0)), pr: Math.max(0, Math.round(+c.pr || 0)),
+      ach: Array.isArray(c.ach) ? c.ach.filter((a) => ACHIEVEMENTS.some((x) => x.id === a)) : [],
+      sy: SYMBOLS[c.sy] ? c.sy : 'none', fr: !!c.fr,
+      up: /^\d{4}-\d{2}-\d{2}$/.test(c.up || '') ? c.up : isoDate()
+    };
+  } catch (e) { return null; }
+}
 
 /* ---------- 5 · UI-Bausteine ---------- */
 function toast(msg, kind = 'info', ms = 2200) {
@@ -1944,6 +2345,87 @@ function barbellSVG(perSide) {
     </svg>`;
 }
 
+/* ---------- Avatar (Tamagotchi-Begleiter) ---------- */
+/* Körperformen je Figur (m/f) und Stufe 0–3. vest = Maße des Plattenträgers passend zum Torso */
+const AVATAR_BODY = {
+  m: [
+    { legs: [86, 103, 11], arms: [[66, 138, 8, 15]], bic: null, torso: 'E100,138,32,36', shorts: 'M70 152 Q100 162 130 152 L126 168 Q100 177 74 168 Z', emblem: null, shadow: 44, vest: { sx: 22, l: 76, r: 124, top: 112, bot: 150, sy: 101 } },
+    { legs: [84, 103, 13], arms: [[56, 138, 10, 20]], bic: [56, 127, 9], torso: 'M66 108 Q100 98 134 108 Q132 150 124 172 Q100 182 76 172 Q68 150 66 108 Z', emblem: [91, 134, 100, 123, 4], shadow: 50, vest: { sx: 25, l: 72, r: 128, top: 114, bot: 158, sy: 100 } },
+    { legs: [82, 103, 15], arms: [[42, 138, 13, 23]], bic: [42, 124, 12], torso: 'M52 106 Q100 91 148 106 Q141 150 126 174 Q100 185 74 174 Q59 150 52 106 Z', emblem: [90, 134, 100, 121, 4.5], shadow: 58, vest: { sx: 27, l: 66, r: 134, top: 112, bot: 158, sy: 98 } },
+    { legs: [82, 103, 15], arms: [[40, 138, 14, 24]], bic: [40, 123, 13], torso: 'M50 105 Q100 89 150 105 Q142 150 126 174 Q100 185 74 174 Q58 150 50 105 Z', emblem: [88, 136, 100, 119, 6], shadow: 60, vest: { sx: 28, l: 64, r: 136, top: 111, bot: 158, sy: 97 } }
+  ],
+  f: [
+    { legs: [87, 102, 11], arms: [[68, 138, 7.5, 14]], bic: null, torso: 'E100,139,29,35', top: 'M75 112 Q100 104 125 112 L127 127 Q100 134 73 127 Z', shorts: 'M72 153 Q100 162 128 153 L125 168 Q100 176 75 168 Z', emblem: null, shadow: 42, vest: { sx: 21, l: 78, r: 122, top: 113, bot: 150, sy: 101 } },
+    { legs: [85, 102, 12], arms: [[60, 138, 9, 19]], bic: [60, 128, 8], torso: 'M70 110 Q100 101 130 110 Q127 132 120 146 Q127 160 124 174 Q100 183 76 174 Q73 160 80 146 Q73 132 70 110 Z', top: 'M71 116 Q100 108 129 116 L125 138 Q100 145 75 138 Z', shorts: 'M76 162 Q100 170 124 162 L123 178 Q100 186 77 178 Z', emblem: [92, 131, 100, 121, 3.5], shadow: 46, vest: { sx: 23, l: 74, r: 126, top: 116, bot: 156, sy: 101 } },
+    { legs: [83, 102, 14], arms: [[48, 138, 11, 21]], bic: [48, 126, 10], torso: 'M60 108 Q100 96 140 108 Q135 132 124 148 Q131 162 126 176 Q100 186 74 176 Q69 162 76 148 Q65 132 60 108 Z', top: 'M62 114 Q100 104 138 114 L131 140 Q100 148 69 140 Z', shorts: 'M75 163 Q100 171 125 163 L124 179 Q100 187 76 179 Z', emblem: [91, 132, 100, 120, 4], shadow: 54, vest: { sx: 25, l: 70, r: 130, top: 114, bot: 158, sy: 99 } },
+    { legs: [83, 102, 14], arms: [[46, 138, 12, 22]], bic: [46, 125, 11], torso: 'M58 107 Q100 94 142 107 Q137 132 125 148 Q132 162 127 176 Q100 186 73 176 Q68 162 75 148 Q63 132 58 107 Z', top: 'M60 113 Q100 102 140 113 L133 140 Q100 148 67 140 Z', shorts: 'M75 163 Q100 171 125 163 L124 179 Q100 187 76 179 Z', emblem: [89, 134, 100, 118, 5], shadow: 56, vest: { sx: 26, l: 68, r: 132, top: 113, bot: 158, sy: 98 } }
+  ]
+};
+/* Taktische Weste (Plattenträger) mit Schultergurten, Kummerbund und MOLLE-Reihen */
+function vestSVG(v) {
+  const OL = '#5b6339', OD = '#454c2a', WEB = '#353a20', w = v.r - v.l, cx = 100;
+  const molle = [0.55, 0.7, 0.85].map((f) => {
+    const y = (v.top + (v.bot - v.top) * f).toFixed(1);
+    return `<path d="M${v.l + 7} ${y} H${v.r - 7}" style="fill:none;stroke:${WEB};stroke-width:2.2;stroke-dasharray:7 3"/>`;
+  }).join('');
+  return `
+    <rect x="${v.l - 5}" y="${v.bot - 15}" width="${w + 10}" height="11" rx="4" style="fill:${OD}"/>
+    <path d="M${v.l + 10} ${v.top + 4} L${cx - v.sx} ${v.sy}" style="fill:none;stroke:${OD};stroke-width:9;stroke-linecap:round"/>
+    <path d="M${v.r - 10} ${v.top + 4} L${cx + v.sx} ${v.sy}" style="fill:none;stroke:${OD};stroke-width:9;stroke-linecap:round"/>
+    <rect x="${cx - v.sx - 8}" y="${v.sy - 5}" width="16" height="9" rx="4" style="fill:${WEB}"/><rect x="${cx + v.sx - 8}" y="${v.sy - 5}" width="16" height="9" rx="4" style="fill:${WEB}"/>
+    <path d="M${v.l + 10} ${v.top + 4} L${cx - v.sx} ${v.sy}" style="fill:none;stroke:${WEB};stroke-width:1.6;stroke-dasharray:3 3"/>
+    <path d="M${v.r - 10} ${v.top + 4} L${cx + v.sx} ${v.sy}" style="fill:none;stroke:${WEB};stroke-width:1.6;stroke-dasharray:3 3"/>
+    <rect x="${v.l + 3}" y="${v.top}" width="${w - 6}" height="${v.bot - v.top}" rx="7" style="fill:${OL}"/>
+    <path d="M${v.l + 3} ${v.top + 9} H${v.r - 3}" style="fill:none;stroke:${OD};stroke-width:3"/>
+    ${molle}
+    <rect x="${cx - 9}" y="${v.top + 12}" width="18" height="9" rx="2" style="fill:rgb(var(--accent))"/>`;
+}
+/* cfg: { skin, acc, stage 0–3, mood happy|ok|sleepy|fresh, body m|f, size } – Akzentfarbe kommt aus dem Theme */
+function avatarSVG({ skin = '#f0c49b', acc = 'none', stage = 0, mood = 'happy', body = 'm', hair = '#2b2f36', size = 120, label = '' }) {
+  const B = (AVATAR_BODY[body] || AVATAR_BODY.m)[clamp(stage, 0, 3)];
+  const S_ = `style="fill:${skin}"`, A_ = 'style="fill:rgb(var(--accent))"', ink = '#15171c', HAIR = hair;
+  const line = (d, w = 3.5) => `<path d="${d}" style="fill:none;stroke:${ink};stroke-width:${w};stroke-linecap:round"/>`;
+  const [lx1, lx2, lw] = B.legs;
+  const torso = B.torso.startsWith('E')
+    ? (() => { const [cx, cy, rx, ry] = B.torso.slice(1).split(','); return `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" ${S_}/>`; })()
+    : `<path d="${B.torso}" ${S_}/>`;
+  const [ax, ay, arx, ary] = B.arms[0];
+  const arms = `<ellipse cx="${ax}" cy="${ay}" rx="${arx}" ry="${ary}" ${S_}/><ellipse cx="${200 - ax}" cy="${ay}" rx="${arx}" ry="${ary}" ${S_}/>`
+    + (B.bic ? `<circle cx="${B.bic[0]}" cy="${B.bic[1]}" r="${B.bic[2]}" ${S_}/><circle cx="${200 - B.bic[0]}" cy="${B.bic[1]}" r="${B.bic[2]}" ${S_}/>` : '');
+  const aura = stage === 3 ? '<circle cx="100" cy="118" r="96" style="fill:rgb(var(--accent));opacity:.1"/><circle cx="100" cy="118" r="76" style="fill:rgb(var(--accent));opacity:.1"/>' : '';
+  const top = B.top ? `<path d="${B.top}" ${A_}/>` : '';
+  const emblem = B.emblem ? (() => { const [x1, y1, xm, ym, w] = B.emblem; return `<path d="M${x1} ${y1} L${xm} ${ym} L${200 - x1} ${y1}" style="fill:none;stroke:${B.top ? ink : 'rgb(var(--accent))'};stroke-width:${w};stroke-linecap:round;stroke-linejoin:round"/>`; })() : '';
+  const vest = acc === 'vest' ? vestSVG(B.vest) : '';
+  const ponytail = body === 'f' ? `<path d="M118 42 Q150 44 147 78 Q145 96 133 102 Q138 82 126 64 Z" style="fill:${HAIR}"/>` : '';
+  const hairTop = body === 'f'
+    ? `<path d="M66 68 Q64 32 100 32 Q136 32 134 68 Q128 50 100 47 Q72 50 66 68 Z" style="fill:${HAIR}"/>`
+    : `<path d="M68 59 Q66 33 100 33 Q134 33 132 59 Q125 46 100 45 Q75 46 68 59 Z" style="fill:${HAIR}"/>`;
+  const face = mood === 'sleepy'
+    ? `${line('M82 68 L94 68')}${line('M106 68 L118 68')}<ellipse cx="100" cy="84" rx="4" ry="5" style="fill:${ink}"/><text x="140" y="40" style="fill:rgb(var(--label2) / var(--label2-a));font-size:18px;font-weight:700">Zz</text>`
+    : mood === 'ok'
+      ? `<circle cx="88" cy="67" r="4.2" style="fill:${ink}"/><circle cx="112" cy="67" r="4.2" style="fill:${ink}"/>${line('M93 83 L107 83')}`
+      : `${line('M82 69 Q88 61 94 69')}${line('M106 69 Q112 61 118 69')}${line('M89 81 Q100 91 111 81')}<circle cx="80" cy="79" r="5.5" style="fill:#ff6f8a;opacity:.45"/><circle cx="120" cy="79" r="5.5" style="fill:#ff6f8a;opacity:.45"/>`;
+  const lashes = body === 'f' && (mood === 'happy' || mood === 'fresh') ? `${line('M82 66 L79 64', 2)}${line('M118 66 L121 64', 2)}` : '';
+  const tuft = body === 'm' && acc !== 'cap' ? `<path d="M94 36 Q97 24 107 29" style="fill:none;stroke:${HAIR};stroke-width:4;stroke-linecap:round"/>` : '';
+  const band = acc === 'band' ? `<rect x="69" y="47" width="62" height="9" rx="4.5" ${A_}/><path d="M130 49 L143 45 L141 57 Z" ${A_}/>` : '';
+  const cap = acc === 'cap' ? `<path d="M66 61 Q66 32 100 32 Q134 32 134 61 Z" ${A_}/><path d="M126 58 Q150 57 157 63 Q141 67 126 64 Z" style="fill:#2b313b"/>` : '';
+  const h = Math.round(size * 1.1);
+  return `<svg viewBox="0 0 200 220" width="${size}" height="${h}" ${label ? `role="img" aria-label="${esc(label)}"` : 'aria-hidden="true"'}>
+    ${aura}<ellipse cx="100" cy="204" rx="${B.shadow}" ry="7.5" style="fill:#000;opacity:.3"/>
+    <rect x="${lx1}" y="166" width="${lw}" height="32" rx="${lw / 2}" ${S_}/><rect x="${lx2}" y="166" width="${lw}" height="32" rx="${lw / 2}" ${S_}/>
+    ${ponytail}${arms}${torso}<path d="${B.shorts}" style="fill:#2b313b"/>${top}${emblem}${vest}
+    <circle cx="100" cy="68" r="34" ${S_}/>${hairTop}${tuft}${face}${lashes}${band}${cap}</svg>`;
+}
+function symbolBadge(id, cls = 'h-4 w-4') {
+  const s = SYMBOLS[id];
+  if (!s || !s.svg) return '';
+  return `<svg viewBox="0 0 24 24" class="${cls}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s.svg}</svg>`;
+}
+function statBar(label, pctVal, color) {
+  return `<span class="block min-w-0"><span class="block t-cap text-label2">${esc(label)}</span>
+    <span class="well mt-1 block h-1.5 overflow-hidden rounded-full"><span class="block h-full rounded-full" style="width:${pctVal}%;background:${color}"></span></span></span>`;
+}
+
 /* ---------- 6 · Views ---------- */
 const TABS = ['home', 'workout', 'tools', 'library', 'profile'];
 let currentTab = 'home';
@@ -2046,7 +2528,8 @@ function viewHome() {
 
   return `
     ${pageHeader(t('nav_home'), dateLabel, ring)}
-    ${today}
+    ${avatarCard(p)}
+    <div class="mt-4">${today}</div>
 
     ${secHead(t('progress'))}
     <section class="card vdiv grid grid-cols-2">
@@ -2056,6 +2539,7 @@ function viewHome() {
         <div class="truncate t-foot text-label2">${esc(titleFor(p.level))}</div>
         <div class="well mt-3 h-1.5 overflow-hidden rounded-full"><div class="h-full rounded-full bg-accent" style="width:${Math.round(p.pct * 100)}%"></div></div>
         <div class="mt-1.5 t-cap tnum text-label2">${esc(t('xp_to_go', { n: fmtInt(p.need - p.into) }))}</div>
+        ${nextReward(p.level) ? `<div class="mt-1 t-cap text-label2">${esc(t('next_reward', { l: nextReward(p.level).lv, r: rewardText(nextReward(p.level)).name }))}</div>` : ''}
       </div>
       <div class="min-w-0 p-4">
         <div class="t-cap text-label2">${esc(t('streak'))}</div>
@@ -2082,7 +2566,7 @@ function viewHome() {
 
     ${secHead(t('daily_goals'), t('x_of_y', { a: hc, b: 4 }))}
     <section id="habits" class="card list">${HABITS.map((k) => habitRowHTML(k, h)).join('')}</section>
-    ${secFoot(esc(hc === 4 ? t('habits_all', { n: XP.habitAll }) : t('habits_foot', { a: XP.habit, b: XP.habitAll })))}
+    ${secFoot(esc(t('habits_note')))}
 
     ${backupDue ? `
       <section class="card mt-9 flex items-center gap-3 p-4">
@@ -2091,7 +2575,8 @@ function viewHome() {
           <p class="t-foot text-label2">${esc(S.lastBackup ? t('backup_old') : t('backup_none'))} ${esc(t('data_local'))}</p>
         </div>
         <button data-action="exportData" class="tap t-body font-semibold text-ink">${esc(t('back_up'))}</button>
-      </section>` : ''}`;
+      </section>` : ''}
+    ${legalFooter()}`;
 }
 
 function viewWorkout() { const act = activeSession(); return act ? viewActiveWorkout(act) : viewPicker(); }
@@ -2152,7 +2637,7 @@ function viewActiveWorkout(s) {
     </div>`;
 }
 
-const SET_GRID = 'grid grid-cols-[1.75rem_minmax(0,1fr)_4rem_4rem_2.75rem] items-center gap-2';
+const SET_GRID = 'grid grid-cols-[1.5rem_minmax(0,1fr)_3.75rem_3.75rem_2.75rem] items-center gap-2';
 
 function setRow(s, i, j, ghost, isNext) {
   const e = s.exercises[i], x = e.sets[j], ex = EX[e.exId];
@@ -2160,7 +2645,7 @@ function setRow(s, i, j, ghost, isNext) {
   const phKg = fmtWv(defaultKgFor(s, i, j));
   const phReps = g ? String(g.reps) : `${e.plan.min}–${e.plan.max}`;
   const done = x.done;
-  const ghostTxt = g ? setTxt(ex, num(g.kg) || 0, g.reps) : '–';
+  const ghostTxt = g ? setTxt(ex, num(g.kg) || 0, g.reps).replace(' × ', '×') : '–';
   const kgVal = x.kg === '' ? '' : fmtWv(num(x.kg));
   return `
     <div class="${SET_GRID} -mx-2 rounded-[12px] px-2 py-1 ${done ? 'bg-green/10' : isNext ? 'bg-accent/10' : ''}">
@@ -2340,7 +2825,7 @@ function canShareFiles() {
 function isStandalone() { return matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; }
 
 function themeCards() {
-  const st = S.settings;
+  const st = S.settings, lvNow = computeProgress().level;
   const card = (id, bg, cardBg, accent, light) => {
     const on = st.theme === id;
     const ink = light ? '#1a1a1a' : '#ffffff';
@@ -2368,9 +2853,12 @@ function themeCards() {
       <section class="card list mt-3">
         <div class="row">
           <span class="flex-1 t-body">${esc(t('accent_color'))}</span>
-          <span class="flex gap-2.5">
-            ${Object.entries(ACCENTS).map(([k, a]) => `<button data-action="setAccent" data-value="${k}" aria-pressed="${st.accent === k}" aria-label="${esc(L(a.label))}"
-              class="tap h-8 w-8 rounded-full" style="background:${a.hex};box-shadow:${st.accent === k ? `0 0 0 2px rgb(var(--card)), 0 0 0 4px ${a.hex}` : 'none'}"></button>`).join('')}
+          <span class="flex flex-wrap justify-end gap-2.5">
+            ${Object.entries(ACCENTS).map(([k, a]) => {
+              const open = isUnlocked('accent', k, lvNow);
+              return `<button data-action="setAccent" data-value="${k}" aria-pressed="${st.accent === k}" aria-label="${esc(L(a.label))}${open ? '' : `, ${esc(t('from_level', { l: a.lv }))}`}"
+                class="tap relative flex h-8 w-8 items-center justify-center rounded-full" style="background:${a.hex};${open ? '' : 'opacity:.35;'}box-shadow:${st.accent === k ? `0 0 0 2px rgb(var(--card)), 0 0 0 4px ${a.hex}` : 'none'}">${open ? '' : `<span class="text-black">${icon('lock', 'h-3.5 w-3.5', false, 2.4)}</span>`}</button>`;
+            }).join('')}
           </span>
         </div>
       </section>
@@ -2406,7 +2894,8 @@ function viewProfile() {
   return `
     ${pageHeader(t('nav_profile'), t('profile_sub', { h: fmtHeight(S.profile.height), a: S.profile.age }),
       `<button data-action="editProfile" class="tap mb-1.5 t-body font-semibold text-ink">${esc(t('edit'))}</button>`)}
-    <section class="card overflow-hidden">
+    ${profileHeroCard(p)}
+    <section class="card mt-4 overflow-hidden">
       <div class="vdiv grid grid-cols-3 hair-b">
         ${stat(fmtInt(p.workouts), t('workouts'))}${stat(fmtInt(p.sets), t('sets'))}${stat(fmtVolume(p.volume), t('volume'))}
       </div>
@@ -2414,6 +2903,8 @@ function viewProfile() {
         ${stat(p.level, t('level'))}${stat(fmtInt(p.xp), 'XP')}${stat(fmtInt(st.best), t('best_streak'))}
       </div>
     </section>
+
+    ${achievementsSection(p)}
 
     ${secHead(t('bodyweight'))}
     <section class="card p-4">
@@ -2512,6 +3003,8 @@ function viewProfile() {
         </button>`).join('')}
     </section>
 
+    ${healthSection()}
+
     ${secHead(t('backup'))}
     <section class="card list">
       ${canExport() ? `<button data-action="exportData" class="row tap t-body text-ink">${esc(t('backup_save'))}</button>` : ''}
@@ -2519,6 +3012,21 @@ function viewProfile() {
       <button data-action="importData" class="row tap t-body text-ink">${esc(t('backup_import'))}</button>
     </section>
     ${secFoot(esc(`${t('data_local')} ${S.lastBackup ? t('backup_last', { d: new Date(S.lastBackup).toLocaleDateString(LOCALE()) }) : t('backup_never')}`))}
+
+    ${secHead(t('legal'))}
+    <section class="card list">
+      ${['imprint', 'privacy'].map((k) => `
+        <button data-action="openLegal" data-kind="${k}" class="row tap">
+          <span class="flex-1 t-body">${esc(L(LEGAL_PAGES[k].title))}</span>
+          <span class="text-label3">${icon('chevron', 'h-4 w-4', false, 2.4)}</span>
+        </button>`).join('')}
+      ${Ads.native ? `
+        <button data-action="privacyOptions" class="row tap">
+          <span class="min-w-0 flex-1"><span class="block t-body">${esc(t('privacy_settings'))}</span><span class="block t-foot text-label2">${esc(t('privacy_settings_hint'))}</span></span>
+          <span class="text-label3">${icon('chevron', 'h-4 w-4', false, 2.4)}</span>
+        </button>` : ''}
+    </section>
+    ${secFoot(esc(Ads.native ? t('ads_foot_native') : t('ads_foot_web')))}
 
     ${secHead('App')}
     <section class="card list">
@@ -2528,7 +3036,8 @@ function viewProfile() {
     ${secFoot(esc(PREVIEW ? t('preview_note') : `${isStandalone() ? t('runs_installed') : t('runs_browser')} ${t('offline_ready')}`))}
     <section class="card mt-6">
       <button data-action="resetAll" class="row tap justify-center t-body text-red">${esc(t('reset_all'))}</button>
-    </section>`;
+    </section>
+    ${legalFooter()}`;
 }
 
 function openProfileSheet() {
@@ -2652,6 +3161,279 @@ function openWorkoutPreview(dayKey) {
     <div class="sticky -mx-4 mt-6 px-4 pt-4" style="bottom: calc(-1.75rem - env(safe-area-inset-bottom, 0px)); margin-bottom: calc(-1.75rem - env(safe-area-inset-bottom, 0px)); padding-bottom: calc(1.75rem + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to bottom, rgb(var(--bg) / 0), rgb(var(--bg)) 30%)">
       <button data-action="startWorkout" data-day="${dayKey}" class="btn btn-big btn-primary tap">${icon('play', 'h-5 w-5', true)}${esc(t('start_workout'))}</button>
     </div>`, { label: L(p.name) });
+}
+
+function openLegalSheet(kind) {
+  const page = LEGAL_PAGES[kind]; if (!page) return;
+  Modal.open(`
+    ${sheetHeader(L(page.title), LANG === 'en' ? t('legal_lang_note') : '')}
+    <section class="card legal mt-4 p-5">${page.html()}</section>`, { label: L(page.title) });
+}
+/* Eigenständige Seite für Store-Einträge: index.html?legal=privacy bzw. ?legal=imprint */
+function renderLegalPage(kind) {
+  const page = LEGAL_PAGES[kind] || LEGAL_PAGES.privacy;
+  document.title = `${L(page.title)} – ${APP_NAME}`;
+  $('#nav').innerHTML = '';
+  $('#view').innerHTML = `
+    ${pageHeader(L(page.title), APP_NAME)}
+    <section class="card legal p-5">${page.html()}</section>
+    <p class="mt-6 px-1 t-foot text-label2"><a href="./" class="text-ink">${esc(t('open_app'))}</a></p>`;
+  $('#view').style.paddingBottom = '48px';
+}
+
+/* ---------- Gamification-Bausteine ---------- */
+function legalFooter() {
+  return `<footer class="mt-10 flex items-center justify-center gap-3 t-foot text-label2">
+    <button data-action="openLegal" data-kind="imprint" class="tap">${esc(L(LEGAL_PAGES.imprint.title))}</button><span aria-hidden="true">·</span>
+    <button data-action="openLegal" data-kind="privacy" class="tap">${esc(L(LEGAL_PAGES.privacy.title))}</button></footer>`;
+}
+function avatarCard(p) {
+  const mood = avatarMood(), stage = avatarStage(p.level), st = avatarStats(mood, p);
+  return `
+    <button data-action="openAvatar" class="card tap flex w-full items-center gap-3 p-4 text-left" aria-label="${esc(t('avatar_customize'))}">
+      <span class="shrink-0">${avatarSVG({ body: S.avatar.body, hair: S.avatar.hair, skin: S.avatar.skin, acc: S.avatar.acc, stage, mood, size: 88, label: S.avatar.name })}</span>
+      <span class="block min-w-0 flex-1">
+        <span class="flex items-baseline gap-2"><span class="t-headline">${esc(S.avatar.name)}</span><span class="t-cap text-label2">${esc(stageLabel(stage))}</span></span>
+        <span class="bubble mt-1.5 block px-3 py-2 t-sub">${esc(moodLine(mood))}</span>
+        <span class="mt-2.5 grid grid-cols-3 gap-2">${statBar(t('av_energy'), st.energy, 'rgb(var(--green))')}${statBar(t('av_mood'), st.mood, 'rgb(var(--orange))')}${statBar(t('av_power'), st.power, 'rgb(var(--accent))')}</span>
+      </span>
+    </button>`;
+}
+function profileHeroCard(p) {
+  const stage = avatarStage(p.level), ach = achievementsFor(p).length;
+  const name = S.profile.displayName || S.avatar.name;
+  return `
+    <section class="card flex items-center gap-4 p-4">
+      <span class="shrink-0 rounded-full ${S.profile.frame && p.level >= 25 ? 'avatar-frame-gold' : ''}" style="background: rgb(var(--well) / var(--well-a))">${avatarSVG({ body: S.avatar.body, hair: S.avatar.hair, skin: S.avatar.skin, acc: S.avatar.acc, stage, mood: avatarMood(), size: 76, label: S.avatar.name })}</span>
+      <div class="min-w-0 flex-1">
+        <div class="flex items-center gap-1.5"><span class="truncate t-title3">${esc(name)}</span><span class="text-ink">${symbolBadge(S.profile.symbol, 'h-[18px] w-[18px]')}</span></div>
+        <div class="t-sub text-label2">${esc(t('level'))} ${p.level} · ${esc(titleFor(p.level))}</div>
+        <div class="t-foot text-label2">${esc(t('ach_short', { a: ach, b: ACHIEVEMENTS.length }))}</div>
+        <div class="mt-2.5 flex gap-2">
+          <button data-action="openAvatar" class="well tap h-9 rounded-full px-3.5 t-foot font-semibold">${esc(t('avatar_customize'))}</button>
+          <button data-action="openFriends" class="well tap flex h-9 items-center gap-1.5 rounded-full px-3.5 t-foot font-semibold">${icon('users', 'h-4 w-4', false, 2)}${esc(t('friends'))}</button>
+        </div>
+      </div>
+    </section>`;
+}
+function achievementsSection(p) {
+  const got = achievementsFor(p);
+  return `
+    ${secHead(t('achievements'), t('x_of_y', { a: got.length, b: ACHIEVEMENTS.length }))}
+    <section class="card grid grid-cols-3 gap-y-4 px-2 py-4">
+      ${ACHIEVEMENTS.map((a) => {
+        const on = got.includes(a.id);
+        return `<div class="flex flex-col items-center gap-1.5 px-1 text-center">
+          <span class="flex h-11 w-11 items-center justify-center rounded-full ${on ? 'bg-accent/20 text-ink' : 'well text-label3'}">${icon(on ? 'medal' : 'lock', 'h-5 w-5', false, 2)}</span>
+          <span class="t-cap ${on ? '' : 'text-label2'}">${esc(L(a.label))}</span></div>`;
+      }).join('')}
+    </section>`;
+}
+function healthSection() {
+  const h = S.settings.health, st = HealthService.status();
+  const statusTxt = st === 'connected' ? t('health_status_connected', { d: h.lastSync ? fmtDate(h.lastSync) : '–' }) : t(`health_status_${st}`);
+  const on = st === 'connected';
+  return `
+    ${secHead(t('health_data'))}
+    <section class="card list">
+      <div class="row">
+        <span class="min-w-0 flex-1"><span class="block t-body">Health Connect</span><span class="block t-foot text-label2">${esc(statusTxt)}</span></span>
+        ${st === 'ready' ? `<button data-action="healthConnect" class="tap t-body font-semibold text-ink">${esc(t('health_connect'))}</button>` : ''}
+        ${on ? `<button data-action="healthSync" class="tap t-body font-semibold text-ink">${esc(t('health_sync'))}</button>` : ''}
+      </div>
+      <div class="row"><span class="min-w-0 flex-1"><span class="block t-body">Samsung Health</span><span class="block t-foot text-label2">${esc(t('health_samsung_hint'))}</span></span></div>
+      ${['importWeight', 'exportWorkouts'].map((k) => `
+        <button data-action="toggleHealth" data-key="${k}" role="switch" aria-checked="${!!h[k]}" ${on ? '' : 'disabled'} class="row tap ${on ? '' : 'opacity-40'}">
+          <span class="flex-1 t-body">${esc(t(`health_${k}`))}</span>${switchHTML(!!h[k])}
+        </button>`).join('')}
+      ${on ? `<button data-action="healthDisconnect" class="row tap t-body text-red">${esc(t('health_disconnect'))}</button>` : ''}
+    </section>
+    ${secFoot(esc(t('health_foot')))}`;
+}
+
+/* ---------- Avatar-Sheets ---------- */
+function pillHTML({ action, value, label, sub, selected, locked }) {
+  return `<button data-action="${action}" data-value="${value}" aria-pressed="${selected}" class="tap flex h-14 flex-col items-center justify-center rounded-[14px] px-1 ${selected ? 'bg-accent text-onaccent' : 'well'} ${locked ? 'opacity-50' : ''}">
+    <span class="flex items-center gap-1 t-foot font-semibold">${locked ? icon('lock', 'h-3.5 w-3.5', false, 2.4) : ''}${esc(label)}</span>
+    ${sub ? `<span class="t-cap opacity-75">${esc(sub)}</span>` : ''}</button>`;
+}
+function openAvatarSheet() {
+  const p = computeProgress(), stage = avatarStage(p.level), mood = avatarMood(), st = avatarStats(mood, p);
+  const nr = nextReward(p.level);
+  Modal.open(`
+    ${sheetHeader(t('avatar'), `${stageLabel(stage)} · ${t('level')} ${p.level}`)}
+    <section class="card mt-4 flex flex-col items-center gap-3 px-4 pb-4 pt-5">
+      <span class="bubble max-w-[85%] px-3.5 py-2 text-center t-sub">${esc(moodLine(mood))}</span>
+      ${avatarSVG({ body: S.avatar.body, hair: S.avatar.hair, skin: S.avatar.skin, acc: S.avatar.acc, stage, mood, size: 170, label: S.avatar.name })}
+      <div class="grid w-full grid-cols-3 gap-3">${statBar(t('av_energy'), st.energy, 'rgb(var(--green))')}${statBar(t('av_mood'), st.mood, 'rgb(var(--orange))')}${statBar(t('av_power'), st.power, 'rgb(var(--accent))')}</div>
+    </section>
+    <section class="card list mt-3">
+      <label class="row"><span class="w-[7.5rem] shrink-0 t-body text-label2">${esc(t('av_name'))}</span>
+        <input data-input="avatarName" type="text" maxlength="20" value="${esc(S.avatar.name)}" class="plainin flex-1 t-body" autocomplete="off"></label>
+      <label class="row"><span class="w-[7.5rem] shrink-0 t-body text-label2">${esc(t('display_name'))}</span>
+        <input data-input="displayName" type="text" maxlength="24" value="${esc(S.profile.displayName)}" placeholder="${esc(t('display_name_ph'))}" class="plainin flex-1 t-body" autocomplete="off"></label>
+    </section>
+    ${secFoot(esc(t('display_name_hint')))}
+
+    ${secHead(t('av_body'))}
+    <div class="seg" role="radiogroup" aria-label="${esc(t('av_body'))}">
+      ${Object.entries(AVATAR_BODIES).map(([k, b]) => `<button data-action="avatarBody" data-value="${k}" role="radio" aria-checked="${S.avatar.body === k}" aria-pressed="${S.avatar.body === k}" class="tap">${esc(L(b.label))}</button>`).join('')}
+    </div>
+
+    ${secHead(t('av_evolution'))}
+    <div class="grid grid-cols-4 gap-2">
+      ${AVATAR_STAGES.map((x, i) => pillHTML({ action: 'noop', value: i, label: stageLabel(i), sub: t('from_level', { l: x.lv }), selected: i === stage, locked: p.level < x.lv })).join('')}
+    </div>
+    ${secFoot(esc(t('av_evolution_hint')))}
+
+    ${secHead(t('av_color'))}
+    <div class="flex flex-wrap gap-3 px-1">
+      ${AVATAR_SKINS.map((x) => `<button data-action="avatarSkin" data-value="${x.hex}" aria-label="${esc(L(x.label))}" aria-pressed="${S.avatar.skin === x.hex}"
+        class="tap h-11 w-11 rounded-full" style="background:${x.hex};box-shadow:${S.avatar.skin === x.hex ? '0 0 0 3px rgb(var(--bg)), 0 0 0 5px rgb(var(--accent))' : 'none'}"></button>`).join('')}
+    </div>
+
+${secHead(t('av_hair'))}
+    <div class="flex flex-wrap gap-3 px-1">
+      ${AVATAR_HAIR.map((x) => `<button data-action="avatarHair" data-value="${x.hex}" aria-label="${esc(L(x.label))}" aria-pressed="${S.avatar.hair === x.hex}"
+        class="tap h-11 w-11 rounded-full" style="background:${x.hex};box-shadow:${S.avatar.hair === x.hex ? '0 0 0 3px rgb(var(--bg)), 0 0 0 5px rgb(var(--accent))' : 'inset 0 0 0 1px rgb(var(--sep) / var(--sep-a))'}"></button>`).join('')}
+    </div>
+
+    ${secHead(t('av_accessory'))}
+    <div class="grid grid-cols-4 gap-2">
+      ${Object.entries(AVATAR_ACCS).map(([k, a]) => pillHTML({ action: 'avatarAcc', value: k, label: L(a.label), sub: a.lv > 1 ? t('from_level', { l: a.lv }) : '', selected: S.avatar.acc === k, locked: p.level < a.lv })).join('')}
+    </div>
+
+    ${secHead(t('profile_symbol'))}
+    <div class="grid grid-cols-5 gap-2">
+      ${Object.entries(SYMBOLS).map(([k, a]) => `<button data-action="setSymbol" data-value="${k}" aria-pressed="${S.profile.symbol === k}" aria-label="${esc(L(a.label))}${p.level < a.lv ? `, ${esc(t('from_level', { l: a.lv }))}` : ''}"
+        class="tap flex h-14 flex-col items-center justify-center gap-0.5 rounded-[14px] ${S.profile.symbol === k ? 'bg-accent text-onaccent' : 'well'} ${p.level < a.lv ? 'opacity-50' : ''}">
+        ${p.level < a.lv ? icon('lock', 'h-4 w-4', false, 2.2) : (a.svg ? symbolBadge(k, 'h-5 w-5') : icon('minus', 'h-4 w-4', false, 2.2))}
+        <span class="t-cap">${esc(L(a.label))}</span></button>`).join('')}
+    </div>
+    <section class="card list mt-3">
+      <button data-action="toggleFrame" role="switch" aria-checked="${!!S.profile.frame}" class="row tap ${p.level < 25 ? 'opacity-50' : ''}">
+        <span class="min-w-0 flex-1"><span class="block t-body">${esc(t('profile_frame'))}</span><span class="block t-foot text-label2">${esc(t('from_level', { l: 25 }))}</span></span>
+        ${p.level < 25 ? icon('lock', 'h-4 w-4 text-label3', false, 2.2) : switchHTML(!!S.profile.frame)}
+      </button>
+    </section>
+    ${nr ? secFoot(esc(t('next_reward', { l: nr.lv, r: `${rewardText(nr).type} ${rewardText(nr).name}` }))) : ''}`, { label: t('avatar') });
+}
+function openAvatarCreate() {
+  Modal.open(`
+    <div class="px-1 pt-2 text-center">
+      <h2 class="t-title2">${esc(t('av_create_title'))}</h2>
+      <p class="mt-1 t-sub text-label2">${esc(t('av_create_sub'))}</p>
+    </div>
+    <div class="mt-4 flex justify-center">${avatarSVG({ body: S.avatar.body, hair: S.avatar.hair, skin: S.avatar.skin, acc: S.avatar.acc, stage: 0, mood: 'fresh', size: 170, label: S.avatar.name })}</div>
+    <section class="card list mt-4">
+      <label class="row"><span class="w-20 shrink-0 t-body text-label2">${esc(t('av_name'))}</span>
+        <input data-input="avatarName" type="text" maxlength="20" value="${esc(S.avatar.name)}" class="plainin flex-1 t-body" autocomplete="off"></label>
+    </section>
+    <div class="seg mt-3" role="radiogroup" aria-label="${esc(t('av_body'))}">
+      ${Object.entries(AVATAR_BODIES).map(([k, b]) => `<button data-action="avatarBodyCreate" data-value="${k}" role="radio" aria-checked="${S.avatar.body === k}" aria-pressed="${S.avatar.body === k}" class="tap">${esc(L(b.label))}</button>`).join('')}
+    </div>
+    <div class="mt-4 flex justify-center gap-3">
+      ${AVATAR_SKINS.map((x) => `<button data-action="avatarSkinCreate" data-value="${x.hex}" aria-label="${esc(L(x.label))}" aria-pressed="${S.avatar.skin === x.hex}"
+        class="tap h-11 w-11 rounded-full" style="background:${x.hex};box-shadow:${S.avatar.skin === x.hex ? '0 0 0 3px rgb(var(--bg)), 0 0 0 5px rgb(var(--accent))' : 'none'}"></button>`).join('')}
+    </div>
+    <div class="mt-3 flex items-center justify-center gap-3">
+      <span class="t-foot text-label2">${esc(t('av_hair'))}</span>
+      ${AVATAR_HAIR.map((x) => `<button data-action="avatarHairCreate" data-value="${x.hex}" aria-label="${esc(L(x.label))}" aria-pressed="${S.avatar.hair === x.hex}"
+        class="tap h-9 w-9 rounded-full" style="background:${x.hex};box-shadow:${S.avatar.hair === x.hex ? '0 0 0 3px rgb(var(--bg)), 0 0 0 5px rgb(var(--accent))' : 'inset 0 0 0 1px rgb(var(--sep) / var(--sep-a))'}"></button>`).join('')}
+    </div>
+
+    <button data-action="avatarCreateDone" class="btn btn-big btn-primary tap mt-7">${esc(t('av_create_btn'))}</button>`,
+  { label: t('av_create_title'), onClose: () => { if (!S.avatar.created) { S.avatar.created = true; save(); } } });
+}
+
+/* ---------- Freunde (Karten per Code oder QR, ohne Server) ---------- */
+function qrSVG(text) {
+  const q = QR(0, 'M'); q.addData(text); q.make();
+  const n = q.getModuleCount(), m = 2;
+  let d = '';
+  for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) d += `M${c + m} ${r + m}h1v1h-1z`;
+  return `<svg viewBox="0 0 ${n + 2 * m} ${n + 2 * m}" role="img" aria-label="QR-Code"><rect width="100%" height="100%" fill="#fff"/><path d="${d}" fill="#000"/></svg>`;
+}
+function friendRow(f, isMe) {
+  const stage = avatarStage(f.lv);
+  return `
+    <div class="row !items-start !py-3.5">
+      <span class="shrink-0 rounded-full ${f.fr && f.lv >= 25 ? 'avatar-frame-gold' : ''}" style="background: rgb(var(--well) / var(--well-a))">${avatarSVG({ body: f.bd, hair: f.hc, skin: f.sk, acc: f.ac, stage, mood: 'happy', size: 56, label: f.an || f.n })}</span>
+      <span class="block min-w-0 flex-1">
+        <span class="flex items-center gap-1.5"><span class="truncate t-headline">${esc(isMe ? `${f.n} (${t('you')})` : f.n)}</span><span class="text-ink">${symbolBadge(f.sy, 'h-4 w-4')}</span></span>
+        <span class="block t-foot text-label2">${esc(t('level'))} ${f.lv} · ${esc(titleFor(f.lv, f.bd))}</span>
+        <span class="block t-foot tnum text-label2">${esc(t('friend_stats', { w: f.wo, s: f.bs, p: f.pr }))}</span>
+        <span class="mt-1.5 flex flex-wrap items-center gap-1">
+          ${f.ach.slice(0, 8).map((id) => `<span class="flex h-6 w-6 items-center justify-center rounded-full bg-accent/20 text-ink" title="${esc(L(ACHIEVEMENTS.find((a) => a.id === id).label))}">${icon('medal', 'h-3.5 w-3.5', false, 2.2)}</span>`).join('')}
+          <span class="ml-1 t-cap text-label2">${esc(t('ach_short', { a: f.ach.length, b: ACHIEVEMENTS.length }))}</span>
+        </span>
+        ${isMe ? '' : `<span class="mt-1 block t-cap text-label3">${esc(t('as_of', { d: fmtDate(f.up) }))}</span>`}
+      </span>
+      ${isMe ? '' : `<button data-action="removeFriend" data-id="${esc(f.id)}" class="tap -mr-1 text-label3" aria-label="${esc(t('remove_friend', { name: f.n }))}">${icon('x', 'h-4 w-4', false, 2.4)}</button>`}
+    </div>`;
+}
+function openFriendsSheet() {
+  const me = myFriendCard();
+  const all = [{ ...me, me: true }, ...S.friends].sort((a, b) => b.xp - a.xp);
+  Modal.open(`
+    ${sheetHeader(t('friends'), t('friends_sub', { n: S.friends.length }))}
+    <div class="mt-4 grid grid-cols-2 gap-2.5">
+      <button data-action="openMyCard" class="btn btn-primary tap !h-12 !text-[15px]">${icon('share', 'h-[18px] w-[18px]', false, 2.2)}${esc(t('share_card'))}</button>
+      <button data-action="openAddFriend" class="btn btn-gray tap !h-12 !text-[15px]">${icon('plus', 'h-[18px] w-[18px]', false, 2.4)}${esc(t('add'))}</button>
+    </div>
+    ${secHead(t('ranking'))}
+    <section class="card list" style="--inset:84px">${all.map((f) => friendRow(f, !!f.me)).join('')}</section>
+    ${S.friends.length ? '' : secFoot(esc(t('friends_empty')))}
+    ${secFoot(esc(t('friends_foot')))}`, { label: t('friends') });
+}
+function openMyCardSheet() {
+  const card = myFriendCard(), link = friendLink(card);
+  Modal.open(`
+    ${sheetHeader(t('my_card'), t('my_card_sub'))}
+    <section class="card mt-4 flex flex-col items-center gap-3 p-5">
+      <div class="qrbox w-full max-w-[260px] overflow-hidden rounded-[14px]">${qrSVG(link)}</div>
+      <div class="text-center"><div class="t-headline">${esc(card.n)}</div><div class="t-foot text-label2">${esc(t('level'))} ${card.lv} · ${esc(titleFor(card.lv))}</div></div>
+    </section>
+    <div class="mt-4 grid ${navigator.share ? 'grid-cols-2' : 'grid-cols-1'} gap-2.5">
+      ${navigator.share ? `<button data-action="shareCard" class="btn btn-primary tap">${icon('share', 'h-5 w-5', false, 2.2)}${esc(t('share'))}</button>` : ''}
+      <button data-action="copyCard" class="btn btn-gray tap">${icon('copy', 'h-5 w-5', false, 2.2)}${esc(t('copy_link'))}</button>
+    </div>
+    ${secFoot(esc(t('my_card_foot')))}`, { label: t('my_card') });
+}
+const canScan = () => 'BarcodeDetector' in window && !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+function openAddFriendSheet() {
+  Modal.open(`
+    ${sheetHeader(t('add_friend'))}
+    ${canScan() ? `<button data-action="scanFriend" class="btn btn-primary tap mt-4">${icon('camera', 'h-5 w-5', false, 2.2)}${esc(t('scan_qr'))}</button>` : ''}
+    <section class="card mt-4 p-4">
+      <textarea id="friendCode" rows="3" placeholder="${esc(t('add_friend_ph'))}" class="plainin w-full resize-none t-sub" autocomplete="off" spellcheck="false"></textarea>
+    </section>
+    <button data-action="addFriendFromInput" class="btn btn-gray tap mt-3">${esc(t('add'))}</button>
+    ${secFoot(esc(t('add_friend_hint')))}`, { label: t('add_friend') });
+}
+let scanStream = null, scanTimer = null;
+function stopScan() {
+  clearInterval(scanTimer); scanTimer = null;
+  if (scanStream) { scanStream.getTracks().forEach((tr) => tr.stop()); scanStream = null; }
+}
+async function openScanSheet() {
+  Modal.open(`
+    ${sheetHeader(t('scan_qr'), t('scan_hint'))}
+    <div class="mt-4 overflow-hidden rounded-[20px] bg-black"><video id="scanVideo" playsinline muted class="block aspect-square w-full object-cover"></video></div>`,
+  { label: t('scan_qr'), onClose: stopScan });
+  try {
+    scanStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' }, audio: false });
+    const video = $('#scanVideo'); if (!video) { stopScan(); return; }
+    video.srcObject = scanStream; await video.play();
+    const detector = new BarcodeDetector({ formats: ['qr_code'] });
+    scanTimer = setInterval(async () => {
+      try {
+        const codes = await detector.detect(video);
+        const hit = codes.find((c) => decodeFriendCard(c.rawValue));
+        if (hit) { stopScan(); addFriendCode(hit.rawValue); }
+      } catch (e) { /* nächster Versuch */ }
+    }, 350);
+  } catch (err) { stopScan(); Modal.close(); toast(t('toast_camera_failed'), 'err', 3000); }
 }
 
 /* ---------- 7 · Tools ---------- */
@@ -2973,6 +3755,163 @@ async function requestWakeLock() {
 }
 function releaseWakeLock() { if (wakeLock) { wakeLock.release().catch(() => {}); wakeLock = null; } }
 
+/* ---------- 8b · Werbung (AdMob-Interstitial, nur native Android-App) ----------
+   Im Browser und in der Vorschau gibt es kein AdMob-Plugin, dort bleibt die App werbefrei.
+   Ablauf: Einwilligung (Google UMP) → SDK starten → Anzeige vorladen →
+   anzeigen, wenn der Nutzer die Workout-Zusammenfassung schließt. Nie während eines Trainings. */
+const Ads = {
+  plugin: null, native: false, ready: false, canRequest: false,
+  loaded: false, loading: false, busy: false,
+  detect() {
+    const C = window.Capacitor;
+    if (!C || typeof C.isNativePlatform !== 'function' || !C.isNativePlatform()) return null;
+    if (C.Plugins && C.Plugins.AdMob) return C.Plugins.AdMob;
+    return typeof C.registerPlugin === 'function' ? C.registerPlugin('AdMob') : null;
+  },
+  async init() {
+    this.plugin = this.detect();
+    this.native = !!this.plugin;
+    if (!this.native || !ADS_CONFIG.enabled) return;
+    try {
+      let info = await this.plugin.requestConsentInfo();
+      if (info && info.isConsentFormAvailable && info.status === 'REQUIRED') info = await this.plugin.showConsentForm();
+      this.canRequest = !!(info && info.canRequestAds);
+      await this.start();
+    } catch (err) { console.warn('AdMob init', err); }
+  },
+  async start() {
+    if (!this.canRequest || this.ready) return;
+    await this.plugin.initialize({});
+    this.ready = true;
+    this.preload();
+  },
+  async preload() {
+    if (!this.ready || this.loaded || this.loading) return;
+    this.loading = true;
+    try {
+      const test = ADS_CONFIG.testMode;
+      await this.plugin.prepareInterstitial({ adId: test ? ADS_CONFIG.testInterstitialId : ADS_CONFIG.interstitialId, isTesting: test });
+      this.loaded = true;
+    } catch (err) { this.loaded = false; console.warn('AdMob laden', err); }
+    finally { this.loading = false; }
+  },
+  /* Natürliche Pause: Zusammenfassung wurde gesehen und geschlossen */
+  async afterWorkout() {
+    if (!this.ready || this.busy || activeSession()) return;
+    if (!this.loaded) { this.preload(); return; }
+    const last = (S.meta && S.meta.lastAd) || 0;
+    if (Date.now() - last < ADS_CONFIG.minMinutesBetween * 60000) return;
+    this.busy = true;
+    try {
+      await this.plugin.showInterstitial();
+      S.meta.lastAd = Date.now(); save();
+    } catch (err) { console.warn('AdMob anzeigen', err); }
+    finally {
+      this.busy = false; this.loaded = false;
+      setTimeout(() => this.preload(), 2000);
+    }
+  },
+  async privacyOptions() {
+    if (!this.native) return;
+    try {
+      if (typeof this.plugin.showPrivacyOptionsForm === 'function') await this.plugin.showPrivacyOptionsForm();
+      else await this.plugin.showConsentForm();
+      const info = await this.plugin.requestConsentInfo();
+      this.canRequest = !!(info && info.canRequestAds);
+      await this.start();
+    } catch (err) { toast(t('toast_privacy_unavailable'), 'err', 3000); }
+  }
+};
+
+/* ---------- 8c · Gesundheitsdaten-Schnittstellen (vorbereitet) ----------
+   Modulare Serviceschicht: Jeder Anbieter liefert dieselben Methoden.
+   Health Connect ist eine Android-Schnittstelle und funktioniert nur in der nativen App
+   mit einem Health-Connect-Plugin. Samsung Health teilt seine Daten über Health Connect.
+   Im Browser bleibt alles deaktiviert, es werden keine Daten übertragen. */
+const DataServices = {
+  /* Gemeinsamer Eingang für alle Importe: Körpergewicht in kg, Datum ISO */
+  mergeBodyweight(entries) {
+    let added = 0;
+    for (const e of entries || []) {
+      const kg = Number(e.kg), date = String(e.date || '').slice(0, 10);
+      if (!(kg >= 30 && kg <= 250) || !/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+      const ex = S.bodyweight.find((x) => x.date === date);
+      if (ex) ex.kg = Math.round(kg * 100) / 100; else { S.bodyweight.push({ date, kg: Math.round(kg * 100) / 100 }); added++; }
+    }
+    if (added) save();
+    return added;
+  },
+  /* Workouts als neutrale Liste für Exporte an Gesundheitsplattformen */
+  workoutsForExport(sinceIso) {
+    return finishedSessions().filter((s) => !sinceIso || s.date >= sinceIso).map((s) => ({
+      title: `${APP_NAME}: ${planName(s.dayKey)}`, start: new Date(s.startedAt).toISOString(),
+      end: new Date(s.finishedAt).toISOString(), type: 'STRENGTH_TRAINING'
+    }));
+  }
+};
+
+const HealthService = {
+  providers: {
+    healthConnect: {
+      id: 'healthConnect', label: 'Health Connect',
+      plugin() {
+        const C = window.Capacitor;
+        return C && C.isNativePlatform && C.isNativePlatform() && C.Plugins ? C.Plugins.HealthConnect || null : null;
+      },
+      /* Adapter: an die API des eingesetzten Health-Connect-Plugins anpassen */
+      async authorize() {
+        const p = this.plugin(); if (!p) throw new Error('unavailable');
+        await p.requestHealthPermissions({ read: ['Weight'], write: ['ExerciseSession'] });
+        return true;
+      },
+      async readBodyweight(sinceIso) {
+        const p = this.plugin(); if (!p) return [];
+        const res = await p.readRecords({ type: 'Weight', timeRangeFilter: { type: 'after', time: new Date(sinceIso || '2020-01-01').toISOString() } });
+        return (res && res.records ? res.records : []).map((r) => ({ date: String(r.time || '').slice(0, 10), kg: r.weight && r.weight.value }));
+      },
+      async writeWorkouts(list) {
+        const p = this.plugin(); if (!p || !list.length) return 0;
+        await p.insertRecords({ records: list.map((w) => ({ type: 'ExerciseSession', startTime: w.start, endTime: w.end, title: w.title, exerciseType: w.type })) });
+        return list.length;
+      }
+    }
+  },
+  native() { return !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform()); },
+  available(id = 'healthConnect') { const pr = this.providers[id]; return !!(pr && pr.plugin()); },
+  status() {
+    if (!this.native()) return 'web';
+    if (!this.available()) return 'missing';
+    return S.settings.health.connected ? 'connected' : 'ready';
+  },
+  async connect() {
+    try {
+      await this.providers.healthConnect.authorize();
+      S.settings.health.connected = true; S.settings.health.provider = 'healthConnect'; save();
+      await this.sync();
+    } catch (err) { toast(t('toast_health_failed'), 'err', 3000); }
+  },
+  disconnect() { S.settings.health.connected = false; S.settings.health.provider = 'none'; save(); },
+  async sync() {
+    if (this.status() !== 'connected') return;
+    const pr = this.providers.healthConnect, h = S.settings.health;
+    try {
+      let n = 0;
+      if (h.importWeight) n += DataServices.mergeBodyweight(await pr.readBodyweight(h.lastSync));
+      if (h.exportWorkouts) await pr.writeWorkouts(DataServices.workoutsForExport(h.lastSync));
+      h.lastSync = isoDate(); save();
+      toast(t('toast_health_synced', { n }), 'ok');
+    } catch (err) { toast(t('toast_health_failed'), 'err', 3000); }
+  }
+};
+
+/* ---------- 8d · QR-Code-Generator ----------
+   qrcode-generator 2.0.4 von Kazuhiko Arase, MIT-Lizenz (https://github.com/kazuhikoarase/qrcode-generator).
+   The word 'QR Code' is registered trademark of DENSO WAVE INCORPORATED. */
+const QR = (function () {
+var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],f={},c=function(t,r){o=function(t){for(var r=new Array(t),e=0;e<t;e+=1){r[e]=new Array(t);for(var n=0;n<t;n+=1)r[e][n]=null}return r}(i=4*e+17),l(0,0),l(i-7,0),l(0,i-7),s(),h(),d(t,r),e>=7&&v(t),null==a&&(a=p(e,n,u)),w(a,r)},l=function(t,r){for(var e=-1;e<=7;e+=1)if(!(t+e<=-1||i<=t+e))for(var n=-1;n<=7;n+=1)r+n<=-1||i<=r+n||(o[t+e][r+n]=0<=e&&e<=6&&(0==n||6==n)||0<=n&&n<=6&&(0==e||6==e)||2<=e&&e<=4&&2<=n&&n<=4)},h=function(){for(var t=8;t<i-8;t+=1)null==o[t][6]&&(o[t][6]=t%2==0);for(var r=8;r<i-8;r+=1)null==o[6][r]&&(o[6][r]=r%2==0)},s=function(){for(var t=B.getPatternPosition(e),r=0;r<t.length;r+=1)for(var n=0;n<t.length;n+=1){var i=t[r],a=t[n];if(null==o[i][a])for(var u=-2;u<=2;u+=1)for(var f=-2;f<=2;f+=1)o[i+u][a+f]=-2==u||2==u||-2==f||2==f||0==u&&0==f}},v=function(t){for(var r=B.getBCHTypeNumber(e),n=0;n<18;n+=1){var a=!t&&1==(r>>n&1);o[Math.floor(n/3)][n%3+i-8-3]=a}for(n=0;n<18;n+=1){a=!t&&1==(r>>n&1);o[n%3+i-8-3][Math.floor(n/3)]=a}},d=function(t,r){for(var e=n<<3|r,a=B.getBCHTypeInfo(e),u=0;u<15;u+=1){var f=!t&&1==(a>>u&1);u<6?o[u][8]=f:u<8?o[u+1][8]=f:o[i-15+u][8]=f}for(u=0;u<15;u+=1){f=!t&&1==(a>>u&1);u<8?o[8][i-u-1]=f:u<9?o[8][15-u-1+1]=f:o[8][15-u-1]=f}o[i-8][8]=!t},w=function(t,r){for(var e=-1,n=i-1,a=7,u=0,f=B.getMaskFunction(r),c=i-1;c>0;c-=2)for(6==c&&(c-=1);;){for(var g=0;g<2;g+=1)if(null==o[n][c-g]){var l=!1;u<t.length&&(l=1==(t[u]>>>a&1)),f(n,c-g)&&(l=!l),o[n][c-g]=l,-1==(a-=1)&&(u+=1,a=7)}if((n+=e)<0||i<=n){n-=e,e=-e;break}}},p=function(t,r,e){for(var n=A.getRSBlocks(t,r),o=b(),i=0;i<e.length;i+=1){var a=e[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var u=0;for(i=0;i<n.length;i+=1)u+=n[i].dataCount;if(o.getLengthInBits()>8*u)throw"code length overflow. ("+o.getLengthInBits()+">"+8*u+")";for(o.getLengthInBits()+4<=8*u&&o.put(0,4);o.getLengthInBits()%8!=0;)o.putBit(!1);for(;!(o.getLengthInBits()>=8*u||(o.put(236,8),o.getLengthInBits()>=8*u));)o.put(17,8);return function(t,r){for(var e=0,n=0,o=0,i=new Array(r.length),a=new Array(r.length),u=0;u<r.length;u+=1){var f=r[u].dataCount,c=r[u].totalCount-f;n=Math.max(n,f),o=Math.max(o,c),i[u]=new Array(f);for(var g=0;g<i[u].length;g+=1)i[u][g]=255&t.getBuffer()[g+e];e+=f;var l=B.getErrorCorrectPolynomial(c),h=k(i[u],l.getLength()-1).mod(l);for(a[u]=new Array(l.getLength()-1),g=0;g<a[u].length;g+=1){var s=g+h.getLength()-a[u].length;a[u][g]=s>=0?h.getAt(s):0}}var v=0;for(g=0;g<r.length;g+=1)v+=r[g].totalCount;var d=new Array(v),w=0;for(g=0;g<n;g+=1)for(u=0;u<r.length;u+=1)g<i[u].length&&(d[w]=i[u][g],w+=1);for(g=0;g<o;g+=1)for(u=0;u<r.length;u+=1)g<a[u].length&&(d[w]=a[u][g],w+=1);return d}(o,n)};f.addData=function(t,r){var e=null;switch(r=r||"Byte"){case"Numeric":e=M(t);break;case"Alphanumeric":e=x(t);break;case"Byte":e=m(t);break;case"Kanji":e=L(t);break;default:throw"mode:"+r}u.push(e),a=null},f.isDark=function(t,r){if(t<0||i<=t||r<0||i<=r)throw t+","+r;return o[t][r]},f.getModuleCount=function(){return i},f.make=function(){if(e<1){for(var t=1;t<40;t++){for(var r=A.getRSBlocks(t,n),o=b(),i=0;i<u.length;i++){var a=u[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var g=0;for(i=0;i<r.length;i++)g+=r[i].dataCount;if(o.getLengthInBits()<=8*g)break}e=t}c(!1,function(){for(var t=0,r=0,e=0;e<8;e+=1){c(!0,e);var n=B.getLostPoint(f);(0==e||t>n)&&(t=n,r=e)}return r}())},f.createTableTag=function(t,r){t=t||2;var e="";e+='<table style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: "+(r=void 0===r?4*t:r)+"px;",e+='">',e+="<tbody>";for(var n=0;n<f.getModuleCount();n+=1){e+="<tr>";for(var o=0;o<f.getModuleCount();o+=1)e+='<td style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: 0px;",e+=" width: "+t+"px;",e+=" height: "+t+"px;",e+=" background-color: ",e+=f.isDark(n,o)?"#000000":"#ffffff",e+=";",e+='"/>';e+="</tr>"}return e+="</tbody>",e+="</table>"},f.createSvgTag=function(t,r,e,n){var o={};"object"==typeof arguments[0]&&(t=(o=arguments[0]).cellSize,r=o.margin,e=o.alt,n=o.title),t=t||2,r=void 0===r?4*t:r,(e="string"==typeof e?{text:e}:e||{}).text=e.text||null,e.id=e.text?e.id||"qrcode-description":null,(n="string"==typeof n?{text:n}:n||{}).text=n.text||null,n.id=n.text?n.id||"qrcode-title":null;var i,a,u,c,g=f.getModuleCount()*t+2*r,l="";for(c="l"+t+",0 0,"+t+" -"+t+",0 0,-"+t+"z ",l+='<svg version="1.1" xmlns="http://www.w3.org/2000/svg"',l+=o.scalable?"":' width="'+g+'px" height="'+g+'px"',l+=' viewBox="0 0 '+g+" "+g+'" ',l+=' preserveAspectRatio="xMinYMin meet"',l+=n.text||e.text?' role="img" aria-labelledby="'+y([n.id,e.id].join(" ").trim())+'"':"",l+=">",l+=n.text?'<title id="'+y(n.id)+'">'+y(n.text)+"</title>":"",l+=e.text?'<description id="'+y(e.id)+'">'+y(e.text)+"</description>":"",l+='<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>',l+='<path d="',a=0;a<f.getModuleCount();a+=1)for(u=a*t+r,i=0;i<f.getModuleCount();i+=1)f.isDark(a,i)&&(l+="M"+(i*t+r)+","+u+c);return l+='" stroke="transparent" fill="black"/>',l+="</svg>"},f.createDataURL=function(t,r){t=t||2,r=void 0===r?4*t:r;var e=f.getModuleCount()*t+2*r,n=r,o=e-r;return I(e,e,function(r,e){if(n<=r&&r<o&&n<=e&&e<o){var i=Math.floor((r-n)/t),a=Math.floor((e-n)/t);return f.isDark(a,i)?0:1}return 1})},f.createImgTag=function(t,r,e){t=t||2,r=void 0===r?4*t:r;var n=f.getModuleCount()*t+2*r,o="";return o+="<img",o+=' src="',o+=f.createDataURL(t,r),o+='"',o+=' width="',o+=n,o+='"',o+=' height="',o+=n,o+='"',e&&(o+=' alt="',o+=y(e),o+='"'),o+="/>"};var y=function(t){for(var r="",e=0;e<t.length;e+=1){var n=t.charAt(e);switch(n){case"<":r+="&lt;";break;case">":r+="&gt;";break;case"&":r+="&amp;";break;case'"':r+="&quot;";break;default:r+=n}}return r};return f.createASCII=function(t,r){if((t=t||1)<2)return function(t){t=void 0===t?2:t;var r,e,n,o,i,a=1*f.getModuleCount()+2*t,u=t,c=a-t,g={"██":"█","█ ":"▀"," █":"▄","  ":" "},l={"██":"▀","█ ":"▀"," █":" ","  ":" "},h="";for(r=0;r<a;r+=2){for(n=Math.floor((r-u)/1),o=Math.floor((r+1-u)/1),e=0;e<a;e+=1)i="█",u<=e&&e<c&&u<=r&&r<c&&f.isDark(n,Math.floor((e-u)/1))&&(i=" "),u<=e&&e<c&&u<=r+1&&r+1<c&&f.isDark(o,Math.floor((e-u)/1))?i+=" ":i+="█",h+=t<1&&r+1>=c?l[i]:g[i];h+="\n"}return a%2&&t>0?h.substring(0,h.length-a-1)+Array(a+1).join("▀"):h.substring(0,h.length-1)}(r);t-=1,r=void 0===r?2*t:r;var e,n,o,i,a=f.getModuleCount()*t+2*r,u=r,c=a-r,g=Array(t+1).join("██"),l=Array(t+1).join("  "),h="",s="";for(e=0;e<a;e+=1){for(o=Math.floor((e-u)/t),s="",n=0;n<a;n+=1)i=1,u<=n&&n<c&&u<=e&&e<c&&f.isDark(o,Math.floor((n-u)/t))&&(i=0),s+=i?g:l;for(o=0;o<t;o+=1)h+=s+"\n"}return h.substring(0,h.length-1)},f.renderTo2dContext=function(t,r){r=r||2;for(var e=f.getModuleCount(),n=0;n<e;n++)for(var o=0;o<e;o++)t.fillStyle=f.isDark(n,o)?"black":"white",t.fillRect(o*r,n*r,r,r)},f};t.stringToBytes=(t.stringToBytesFuncs={default:function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);r.push(255&n)}return r}}).default,t.createStringToBytes=function(t,r){var e=function(){for(var e=S(t),n=function(){var t=e.read();if(-1==t)throw"eof";return t},o=0,i={};;){var a=e.read();if(-1==a)break;var u=n(),f=n()<<8|n();i[String.fromCharCode(a<<8|u)]=f,o+=1}if(o!=r)throw o+" != "+r;return i}(),n="?".charCodeAt(0);return function(t){for(var r=[],o=0;o<t.length;o+=1){var i=t.charCodeAt(o);if(i<128)r.push(i);else{var a=e[t.charAt(o)];"number"==typeof a?(255&a)==a?r.push(a):(r.push(a>>>8),r.push(255&a)):r.push(n)}}return r}};var r,e,n,o,i,a=1,u=2,f=4,c=8,g={L:1,M:0,Q:3,H:2},l=0,h=1,s=2,v=3,d=4,w=5,p=6,y=7,B=(r=[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],e=1335,n=7973,i=function(t){for(var r=0;0!=t;)r+=1,t>>>=1;return r},(o={}).getBCHTypeInfo=function(t){for(var r=t<<10;i(r)-i(e)>=0;)r^=e<<i(r)-i(e);return 21522^(t<<10|r)},o.getBCHTypeNumber=function(t){for(var r=t<<12;i(r)-i(n)>=0;)r^=n<<i(r)-i(n);return t<<12|r},o.getPatternPosition=function(t){return r[t-1]},o.getMaskFunction=function(t){switch(t){case l:return function(t,r){return(t+r)%2==0};case h:return function(t,r){return t%2==0};case s:return function(t,r){return r%3==0};case v:return function(t,r){return(t+r)%3==0};case d:return function(t,r){return(Math.floor(t/2)+Math.floor(r/3))%2==0};case w:return function(t,r){return t*r%2+t*r%3==0};case p:return function(t,r){return(t*r%2+t*r%3)%2==0};case y:return function(t,r){return(t*r%3+(t+r)%2)%2==0};default:throw"bad maskPattern:"+t}},o.getErrorCorrectPolynomial=function(t){for(var r=k([1],0),e=0;e<t;e+=1)r=r.multiply(k([1,C.gexp(e)],0));return r},o.getLengthInBits=function(t,r){if(1<=r&&r<10)switch(t){case a:return 10;case u:return 9;case f:case c:return 8;default:throw"mode:"+t}else if(r<27)switch(t){case a:return 12;case u:return 11;case f:return 16;case c:return 10;default:throw"mode:"+t}else{if(!(r<41))throw"type:"+r;switch(t){case a:return 14;case u:return 13;case f:return 16;case c:return 12;default:throw"mode:"+t}}},o.getLostPoint=function(t){for(var r=t.getModuleCount(),e=0,n=0;n<r;n+=1)for(var o=0;o<r;o+=1){for(var i=0,a=t.isDark(n,o),u=-1;u<=1;u+=1)if(!(n+u<0||r<=n+u))for(var f=-1;f<=1;f+=1)o+f<0||r<=o+f||0==u&&0==f||a==t.isDark(n+u,o+f)&&(i+=1);i>5&&(e+=3+i-5)}for(n=0;n<r-1;n+=1)for(o=0;o<r-1;o+=1){var c=0;t.isDark(n,o)&&(c+=1),t.isDark(n+1,o)&&(c+=1),t.isDark(n,o+1)&&(c+=1),t.isDark(n+1,o+1)&&(c+=1),0!=c&&4!=c||(e+=3)}for(n=0;n<r;n+=1)for(o=0;o<r-6;o+=1)t.isDark(n,o)&&!t.isDark(n,o+1)&&t.isDark(n,o+2)&&t.isDark(n,o+3)&&t.isDark(n,o+4)&&!t.isDark(n,o+5)&&t.isDark(n,o+6)&&(e+=40);for(o=0;o<r;o+=1)for(n=0;n<r-6;n+=1)t.isDark(n,o)&&!t.isDark(n+1,o)&&t.isDark(n+2,o)&&t.isDark(n+3,o)&&t.isDark(n+4,o)&&!t.isDark(n+5,o)&&t.isDark(n+6,o)&&(e+=40);var g=0;for(o=0;o<r;o+=1)for(n=0;n<r;n+=1)t.isDark(n,o)&&(g+=1);return e+=Math.abs(100*g/r/r-50)/5*10},o),C=function(){for(var t=new Array(256),r=new Array(256),e=0;e<8;e+=1)t[e]=1<<e;for(e=8;e<256;e+=1)t[e]=t[e-4]^t[e-5]^t[e-6]^t[e-8];for(e=0;e<255;e+=1)r[t[e]]=e;var n={glog:function(t){if(t<1)throw"glog("+t+")";return r[t]},gexp:function(r){for(;r<0;)r+=255;for(;r>=256;)r-=255;return t[r]}};return n}();function k(t,r){if(void 0===t.length)throw t.length+"/"+r;var e=function(){for(var e=0;e<t.length&&0==t[e];)e+=1;for(var n=new Array(t.length-e+r),o=0;o<t.length-e;o+=1)n[o]=t[o+e];return n}(),n={getAt:function(t){return e[t]},getLength:function(){return e.length},multiply:function(t){for(var r=new Array(n.getLength()+t.getLength()-1),e=0;e<n.getLength();e+=1)for(var o=0;o<t.getLength();o+=1)r[e+o]^=C.gexp(C.glog(n.getAt(e))+C.glog(t.getAt(o)));return k(r,0)},mod:function(t){if(n.getLength()-t.getLength()<0)return n;for(var r=C.glog(n.getAt(0))-C.glog(t.getAt(0)),e=new Array(n.getLength()),o=0;o<n.getLength();o+=1)e[o]=n.getAt(o);for(o=0;o<t.getLength();o+=1)e[o]^=C.gexp(C.glog(t.getAt(o))+r);return k(e,0).mod(t)}};return n}var A=function(){var t=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12,7,37,13],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],r=function(t,r){var e={};return e.totalCount=t,e.dataCount=r,e},e={};return e.getRSBlocks=function(e,n){var o=function(r,e){switch(e){case g.L:return t[4*(r-1)+0];case g.M:return t[4*(r-1)+1];case g.Q:return t[4*(r-1)+2];case g.H:return t[4*(r-1)+3];default:return}}(e,n);if(void 0===o)throw"bad rs block @ typeNumber:"+e+"/errorCorrectionLevel:"+n;for(var i=o.length/3,a=[],u=0;u<i;u+=1)for(var f=o[3*u+0],c=o[3*u+1],l=o[3*u+2],h=0;h<f;h+=1)a.push(r(c,l));return a},e}(),b=function(){var t=[],r=0,e={getBuffer:function(){return t},getAt:function(r){var e=Math.floor(r/8);return 1==(t[e]>>>7-r%8&1)},put:function(t,r){for(var n=0;n<r;n+=1)e.putBit(1==(t>>>r-n-1&1))},getLengthInBits:function(){return r},putBit:function(e){var n=Math.floor(r/8);t.length<=n&&t.push(0),e&&(t[n]|=128>>>r%8),r+=1}};return e},M=function(t){var r=a,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+2<r.length;)t.put(o(r.substring(n,n+3)),10),n+=3;n<r.length&&(r.length-n==1?t.put(o(r.substring(n,n+1)),4):r.length-n==2&&t.put(o(r.substring(n,n+2)),7))}},o=function(t){for(var r=0,e=0;e<t.length;e+=1)r=10*r+i(t.charAt(e));return r},i=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);throw"illegal char :"+t};return n},x=function(t){var r=u,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+1<r.length;)t.put(45*o(r.charAt(n))+o(r.charAt(n+1)),11),n+=2;n<r.length&&t.put(o(r.charAt(n)),6)}},o=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);if("A"<=t&&t<="Z")return t.charCodeAt(0)-"A".charCodeAt(0)+10;switch(t){case" ":return 36;case"$":return 37;case"%":return 38;case"*":return 39;case"+":return 40;case"-":return 41;case".":return 42;case"/":return 43;case":":return 44;default:throw"illegal char :"+t}};return n},m=function(r){var e=f,n=t.stringToBytes(r),o={getMode:function(){return e},getLength:function(t){return n.length},write:function(t){for(var r=0;r<n.length;r+=1)t.put(n[r],8)}};return o},L=function(r){var e=c,n=t.stringToBytesFuncs.SJIS;if(!n)throw"sjis not supported.";!function(){var t=n("友");if(2!=t.length||38726!=(t[0]<<8|t[1]))throw"sjis not supported."}();var o=n(r),i={getMode:function(){return e},getLength:function(t){return~~(o.length/2)},write:function(t){for(var r=o,e=0;e+1<r.length;){var n=(255&r[e])<<8|255&r[e+1];if(33088<=n&&n<=40956)n-=33088;else{if(!(57408<=n&&n<=60351))throw"illegal char at "+(e+1)+"/"+n;n-=49472}n=192*(n>>>8&255)+(255&n),t.put(n,13),e+=2}if(e<r.length)throw"illegal char at "+(e+1)}};return i},D=function(){var t=[],r={writeByte:function(r){t.push(255&r)},writeShort:function(t){r.writeByte(t),r.writeByte(t>>>8)},writeBytes:function(t,e,n){e=e||0,n=n||t.length;for(var o=0;o<n;o+=1)r.writeByte(t[o+e])},writeString:function(t){for(var e=0;e<t.length;e+=1)r.writeByte(t.charCodeAt(e))},toByteArray:function(){return t},toString:function(){var r="";r+="[";for(var e=0;e<t.length;e+=1)e>0&&(r+=","),r+=t[e];return r+="]"}};return r},S=function(t){var r=t,e=0,n=0,o=0,i={read:function(){for(;o<8;){if(e>=r.length){if(0==o)return-1;throw"unexpected end of file./"+o}var t=r.charAt(e);if(e+=1,"="==t)return o=0,-1;t.match(/^\s$/)||(n=n<<6|a(t.charCodeAt(0)),o+=6)}var i=n>>>o-8&255;return o-=8,i}},a=function(t){if(65<=t&&t<=90)return t-65;if(97<=t&&t<=122)return t-97+26;if(48<=t&&t<=57)return t-48+52;if(43==t)return 62;if(47==t)return 63;throw"c:"+t};return i},I=function(t,r,e){for(var n=function(t,r){var e=t,n=r,o=new Array(t*r),i={setPixel:function(t,r,n){o[r*e+t]=n},write:function(t){t.writeString("GIF87a"),t.writeShort(e),t.writeShort(n),t.writeByte(128),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(255),t.writeByte(255),t.writeByte(255),t.writeString(","),t.writeShort(0),t.writeShort(0),t.writeShort(e),t.writeShort(n),t.writeByte(0);var r=a(2);t.writeByte(2);for(var o=0;r.length-o>255;)t.writeByte(255),t.writeBytes(r,o,255),o+=255;t.writeByte(r.length-o),t.writeBytes(r,o,r.length-o),t.writeByte(0),t.writeString(";")}},a=function(t){for(var r=1<<t,e=1+(1<<t),n=t+1,i=u(),a=0;a<r;a+=1)i.add(String.fromCharCode(a));i.add(String.fromCharCode(r)),i.add(String.fromCharCode(e));var f,c,g,l=D(),h=(f=l,c=0,g=0,{write:function(t,r){if(t>>>r!=0)throw"length over";for(;c+r>=8;)f.writeByte(255&(t<<c|g)),r-=8-c,t>>>=8-c,g=0,c=0;g|=t<<c,c+=r},flush:function(){c>0&&f.writeByte(g)}});h.write(r,n);var s=0,v=String.fromCharCode(o[s]);for(s+=1;s<o.length;){var d=String.fromCharCode(o[s]);s+=1,i.contains(v+d)?v+=d:(h.write(i.indexOf(v),n),i.size()<4095&&(i.size()==1<<n&&(n+=1),i.add(v+d)),v=d)}return h.write(i.indexOf(v),n),h.write(e,n),h.flush(),l.toByteArray()},u=function(){var t={},r=0,e={add:function(n){if(e.contains(n))throw"dup key:"+n;t[n]=r,r+=1},size:function(){return r},indexOf:function(r){return t[r]},contains:function(r){return void 0!==t[r]}};return e};return i}(t,r),o=0;o<r;o+=1)for(var i=0;i<t;i+=1)n.setPixel(i,o,e(i,o));var a=D();n.write(a);for(var u=function(){var t=0,r=0,e=0,n="",o={},i=function(t){n+=String.fromCharCode(a(63&t))},a=function(t){if(t<0);else{if(t<26)return 65+t;if(t<52)return t-26+97;if(t<62)return t-52+48;if(62==t)return 43;if(63==t)return 47}throw"n:"+t};return o.writeByte=function(n){for(t=t<<8|255&n,r+=8,e+=1;r>=6;)i(t>>>r-6),r-=6},o.flush=function(){if(r>0&&(i(t<<6-r),t=0,r=0),e%3!=0)for(var o=3-e%3,a=0;a<o;a+=1)n+="="},o.toString=function(){return n},o}(),f=a.toByteArray(),c=0;c<f.length;c+=1)u.writeByte(f[c]);return u.flush(),"data:image/gif;base64,"+u};return t}();qrcode.stringToBytesFuncs["UTF-8"]=function(t){return function(t){for(var r=[],e=0;e<t.length;e++){var n=t.charCodeAt(e);n<128?r.push(n):n<2048?r.push(192|n>>6,128|63&n):n<55296||n>=57344?r.push(224|n>>12,128|n>>6&63,128|63&n):(e++,n=65536+((1023&n)<<10|1023&t.charCodeAt(e)),r.push(240|n>>18,128|n>>12&63,128|n>>6&63,128|63&n))}return r}(t)},function(t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports&&(module.exports=t())}(function(){return qrcode});
+return qrcode;
+})();
+
 /* ---------- 9 · Aktionen ---------- */
 const THEME_BAR = { charcoal: '#0f1115', 'rose-dark': '#151013', 'rose-light': '#faf5f6', baby: '#f1f7fd' };
 function applySettings() {
@@ -3077,11 +4016,9 @@ function toggleSet(i, j) {
   lastPop = `${i}:${j}`; rerenderCard(i); lastPop = null;
   updateWorkoutProgress();
   const gain = after.xp - before.xp;
-  if (after.prs > before.prs) { toast(t('toast_new_record', { n: gain }), 'pr', 2800); vibrate([60, 40, 60]); }
-  else if (x.beat) toast(t('toast_ghost_beaten', { n: gain }), 'xp');
-  else toast(t('xp_gain', { n: gain }), 'xp', 1300);
+  if (after.prs > before.prs) { toast(gain > 0 ? t('toast_new_record', { n: gain }) : t('toast_new_record_plain'), 'pr', 2800); vibrate([60, 40, 60]); }
+  else if (x.beat) toast(t('toast_ghost_beaten'), 'xp');
   if (S.settings.autoTimer) Timer.start(e.plan.rest || S.settings.restDefault, t('rest_after', { name: exName(e.exId) }));
-  syncLevel(true);
 }
 
 function finishWorkout() {
@@ -3103,38 +4040,58 @@ function finishWorkout() {
 }
 function completeActive() {
   const s = activeSession(); if (!s) return;
-  const levelBefore = S.meta.lastLevel || 1;
+  const pBefore = computeProgress({ exclude: s.id });
+  const achBefore = achievementsFor(pBefore);
   s.exercises.forEach((e) => { e.sets = e.sets.filter((x) => x.done); });
   s.finishedAt = Date.now();
   S.activeId = null;
   save(true);
   Timer.stop(); releaseWakeLock();
   const sum = sessionSummary(s), p = computeProgress(), st = streakInfo();
-  const levelUp = p.level > levelBefore;
+  const gained = p.xp - pBefore.xp, levelUp = p.level > pBefore.level;
+  const unlocked = rewardsBetween(pBefore.level, p.level);
+  const newAch = achievementsFor(p).filter((id) => !achBefore.includes(id));
+  const bonusStreak = streakBonus(st.current), bonusPr = Math.min(sum.prs.length, XP.prMax) * XP.pr;
   S.meta.lastLevel = p.level; save();
   render();
-  vibrate([60, 40, 120]);
-  Modal.open(`
+  vibrate(levelUp ? [80, 60, 80, 60, 160] : [60, 40, 120]);
+  if (levelUp) flash('level');
+  const breakdown = [`${t('xp_workout')} +${XP.workout}`, bonusPr ? `${t('xp_records')} +${bonusPr}` : '', bonusStreak ? `${t('xp_streak')} +${bonusStreak}` : ''].filter(Boolean).join(' · ');
+  const head = levelUp ? `
+    <div class="pt-2 text-center">
+      <div class="mx-auto w-fit">${levelRing(p, 96)}</div>
+      <h2 class="mt-3 t-title1">${esc(t('levelup_title'))}</h2>
+      <p class="t-sub font-semibold text-ink">${esc(titleFor(p.level))}</p>
+      <p class="mx-auto mt-3 max-w-[320px] t-title3">„${esc(levelQuote(p.level))}“</p>
+    </div>` : `
     <div class="pt-3 text-center">
       <span class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green text-white" style="box-shadow: 0 12px 30px -10px rgb(var(--green) / .7)">${icon('check', 'h-8 w-8', false, 2.6)}</span>
       <h2 class="mt-4 t-title1">${esc(t('workout_saved'))}</h2>
       <p class="t-sub text-label2">${esc(planName(s.dayKey))}</p>
-    </div>
+    </div>`;
+  Modal.open(`
+    ${head}
+    ${unlocked.length ? `
+      ${secHead(t('unlocked'))}
+      <section class="card list">${unlocked.map((r) => { const x = rewardText(r); return `<div class="row"><span class="flex-1 t-body">${esc(x.name)}</span><span class="t-foot text-label2">${esc(x.type)}</span></div>`; }).join('')}</section>` : ''}
     <section class="card vdiv mt-6 grid grid-cols-3">
       ${stat(fmtElapsed(sum.durationMs), t('duration'))}${stat(fmtInt(sum.sets), t('sets'))}${stat(fmtVolume(sum.volume), t('volume'))}
     </section>
     <section class="card list mt-3">
-      <div class="row"><span class="flex-1 t-body">${esc(t('experience'))}</span><span class="t-body font-semibold tnum text-ink">+${fmtInt(sum.xp)} XP</span></div>
+      <div class="row"><span class="min-w-0 flex-1"><span class="block t-body">${esc(t('experience'))}</span><span class="block t-foot text-label2">${esc(breakdown)}</span></span><span class="t-body font-semibold tnum text-ink">+${fmtInt(gained)} XP</span></div>
       <div class="row"><span class="flex-1 t-body">${esc(t('level'))}</span><span class="t-body tnum ${levelUp ? 'font-semibold text-ink' : 'text-label2'}">${esc(levelUp ? t('level_reached', { l: p.level }) : t('level_left', { l: p.level, n: fmtInt(p.need - p.into) }))}</span></div>
       ${sum.beats ? `<div class="row"><span class="flex-1 t-body">${esc(t('ghosts_beaten'))}</span><span class="t-body tnum text-label2">${sum.beats}</span></div>` : ''}
       <div class="row"><span class="flex-1 t-body">${esc(t('streak'))}</span><span class="t-body tnum ${st.current ? 'text-orange' : 'text-label2'}">${esc(t('n_workouts', { n: st.current }))}</span></div>
     </section>
+    ${newAch.length ? `
+      ${secHead(t('new_achievements'))}
+      <section class="card list">${newAch.map((id) => `<div class="row"><span class="text-ink">${icon('medal', 'h-5 w-5', false, 2)}</span><span class="flex-1 t-body">${esc(L(ACHIEVEMENTS.find((a) => a.id === id).label))}</span></div>`).join('')}</section>` : ''}
     ${sum.prs.length ? `
       ${secHead(t('new_records'))}
       <section class="card list">
         ${sum.prs.map((r) => `<div class="row"><span class="min-w-0 flex-1 truncate t-body">${esc(exName(r.exId))}</span><span class="shrink-0 t-body font-semibold tnum text-red">${esc(setTxtU(EX[r.exId], r.kg, r.reps))}</span></div>`).join('')}
       </section>` : ''}
-    <button data-action="closeModal" class="btn btn-big btn-primary tap mt-7">${esc(t('done_btn'))}</button>`, { label: t('workout_saved') });
+    <button data-action="closeModal" class="btn btn-big btn-primary tap mt-7">${esc(t('done_btn'))}</button>`, { label: t('workout_saved'), onClose: () => Ads.afterWorkout() });
 }
 function discardActive() {
   const s = activeSession(); if (!s) return;
@@ -3274,6 +4231,34 @@ async function importFile(file) {
   });
 }
 
+/* Figur wechseln; der Standardname wechselt mit, solange er nicht geändert wurde */
+function setAvatarBody(body) {
+  if (!AVATAR_BODIES[body]) return;
+  const defaults = Object.values(AVATAR_BODIES).map((b) => b.name);
+  if (!S.avatar.name || defaults.includes(S.avatar.name)) S.avatar.name = AVATAR_BODIES[body].name;
+  S.avatar.body = body; save();
+}
+function addFriendCode(raw) {
+  const card = decodeFriendCard(raw);
+  if (!card) { toast(t('toast_friend_invalid'), 'err', 2800); return false; }
+  if (card.id === S.meta.uid) { toast(t('toast_friend_self'), 'err'); return false; }
+  const i = S.friends.findIndex((f) => f.id === card.id);
+  if (i >= 0) S.friends[i] = card; else S.friends.push(card);
+  save();
+  toast(t(i >= 0 ? 'toast_friend_updated' : 'toast_friend_added', { name: card.n }), 'ok');
+  openFriendsSheet();
+  return true;
+}
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; }
+  catch (e) {
+    const ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    let ok = false; try { ok = document.execCommand('copy'); } catch (e2) { ok = false; }
+    ta.remove(); return ok;
+  }
+}
+
 const ACTIONS = {
   tab: (el) => setTab(el.dataset.tab),
   startWorkout: (el) => startWorkout(el.dataset.day),
@@ -3385,7 +4370,11 @@ const ACTIONS = {
     if (k === 'sound' && S.settings.sound) unlockAudio();
   },
   setTheme: (el) => { S.settings.theme = el.dataset.value; save(); applySettings(); render(); },
-  setAccent: (el) => { S.settings.accent = el.dataset.value; save(); applySettings(); render(); },
+  setAccent: (el) => {
+    const a = ACCENTS[el.dataset.value];
+    if (!a || !isUnlocked('accent', el.dataset.value, computeProgress().level)) { toast(t('locked_toast', { l: a ? a.lv : 1 })); return; }
+    S.settings.accent = el.dataset.value; save(); applySettings(); render();
+  },
   setRoseMode: (el) => { S.settings.roseMode = el.dataset.value; save(); applySettings(); render(); },
   setUnits: (el) => {
     if (S.settings.units === el.dataset.value) return;
@@ -3417,6 +4406,55 @@ const ACTIONS = {
     try { await deferredPrompt.userChoice; } catch (e) { /* ignorieren */ }
     deferredPrompt = null; render();
   },
+  openLegal: (el) => openLegalSheet(el.dataset.kind),
+  noop: () => {},
+  openAvatar: () => openAvatarSheet(),
+  avatarSkin: (el) => { S.avatar.skin = el.dataset.value; save(); openAvatarSheet(); render(); },
+  avatarSkinCreate: (el) => { S.avatar.skin = el.dataset.value; save(); openAvatarCreate(); },
+  avatarHair: (el) => { S.avatar.hair = el.dataset.value; save(); openAvatarSheet(); render(); },
+  avatarHairCreate: (el) => { S.avatar.hair = el.dataset.value; save(); openAvatarCreate(); },
+  avatarBody: (el) => { setAvatarBody(el.dataset.value); openAvatarSheet(); render(); },
+  avatarBodyCreate: (el) => { setAvatarBody(el.dataset.value); openAvatarCreate(); },
+  avatarAcc: (el) => {
+    const a = AVATAR_ACCS[el.dataset.value], lv = computeProgress().level;
+    if (!a || lv < a.lv) { toast(t('locked_toast', { l: a ? a.lv : 1 })); return; }
+    S.avatar.acc = el.dataset.value; save(); openAvatarSheet(); render();
+  },
+  setSymbol: (el) => {
+    const sy = SYMBOLS[el.dataset.value], lv = computeProgress().level;
+    if (!sy || lv < sy.lv) { toast(t('locked_toast', { l: sy ? sy.lv : 1 })); return; }
+    S.profile.symbol = el.dataset.value; save(); openAvatarSheet(); render();
+  },
+  toggleFrame: () => {
+    if (computeProgress().level < 25) { toast(t('locked_toast', { l: 25 })); return; }
+    S.profile.frame = !S.profile.frame; save(); openAvatarSheet(); render();
+  },
+  avatarCreateDone: () => {
+    S.avatar.name = (S.avatar.name || '').trim() || 'Rex';
+    S.avatar.created = true; save(); Modal.close(); render();
+    flash('level'); toast(levelQuote(1), 'xp', 3200);
+  },
+  openFriends: () => openFriendsSheet(),
+  openMyCard: () => openMyCardSheet(),
+  openAddFriend: () => openAddFriendSheet(),
+  scanFriend: () => openScanSheet(),
+  addFriendFromInput: () => { const v = ($('#friendCode') || {}).value; if (v) addFriendCode(v); },
+  removeFriend: (el) => {
+    const f = S.friends.find((x) => x.id === el.dataset.id); if (!f) return;
+    confirmSheet({ title: t('remove_friend', { name: f.n }), text: t('remove_friend_text'), confirmLabel: t('delete'), danger: true,
+      onConfirm: () => { S.friends = S.friends.filter((x) => x.id !== f.id); save(); openFriendsSheet(); } });
+  },
+  shareCard: async () => {
+    const link = friendLink(myFriendCard());
+    try { await navigator.share({ title: t('my_card'), text: t('share_text'), url: link }); }
+    catch (err) { if (err && err.name !== 'AbortError') toast(t('toast_share_failed'), 'err'); }
+  },
+  copyCard: async () => { toast(t(await copyText(friendLink(myFriendCard())) ? 'toast_link_copied' : 'toast_share_failed'), 'ok'); },
+  healthConnect: async () => { await HealthService.connect(); render(); },
+  healthSync: async () => { await HealthService.sync(); render(); },
+  healthDisconnect: () => { HealthService.disconnect(); render(); },
+  toggleHealth: (el) => { const k = el.dataset.key; S.settings.health[k] = !S.settings.health[k]; save(); render(); },
+  privacyOptions: () => Ads.privacyOptions(),
   closeModal: () => Modal.close(),
   confirmYes: () => {
     const fn = pendingConfirm; pendingConfirm = null;
@@ -3475,6 +4513,10 @@ document.addEventListener('input', (ev) => {
     habitDay()[k] = Math.round(hToCanon(k, Number(el.value)) * 100) / 100;
     updateHabitRow(k);
     save();
+  } else if (kind === 'avatarName') {
+    S.avatar.name = el.value.slice(0, 20); save();
+  } else if (kind === 'displayName') {
+    S.profile.displayName = el.value.trim().slice(0, 24); save();
   } else if (kind === 'libQuery') {
     libQuery = el.value;
     const list = $('#libList'); if (list) list.innerHTML = libraryListHTML();
@@ -3553,7 +4595,7 @@ window.addEventListener('appinstalled', () => { deferredPrompt = null; toast(t('
 
 /* ---------- 10 · Start ---------- */
 function registerSW() {
-  if (PREVIEW || !('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
+  if (PREVIEW || Ads.native || !('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
   const hadController = !!navigator.serviceWorker.controller;
   const go = () => navigator.serviceWorker.register('./sw.js').catch((err) => console.warn('Service Worker:', err));
   if (document.readyState === 'complete') go(); else window.addEventListener('load', go, { once: true });
@@ -3565,6 +4607,9 @@ function registerSW() {
 function init() {
   S = load();
   applySettings();
+  const legalPage = new URLSearchParams(location.search).get('legal');
+  if (legalPage) { renderLegalPage(legalPage); return; }
+  Ads.native = !!Ads.detect();
   if (S.timer) {
     if (S.timer.endAt > Date.now()) Timer.ensureLoop();
     else S.timer = null;
@@ -3576,10 +4621,20 @@ function init() {
   if (startTab && startTab !== 'home' && TABS.includes(startTab)) setTab(startTab);
   syncLevel(false);
   requestWakeLock();
+  const friendParam = new URLSearchParams(location.search).get('friend');
+  if (friendParam) {
+    history.replaceState({ apexRoot: true }, '', location.pathname);
+    const card = decodeFriendCard(friendParam);
+    if (card && card.id !== S.meta.uid) {
+      confirmSheet({ title: t('add_friend_q', { name: card.n }), text: t('add_friend_q_text', { l: card.lv }), confirmLabel: t('add'),
+        onConfirm: () => addFriendCode(friendParam) });
+    }
+  } else if (!S.avatar.created) setTimeout(openAvatarCreate, 400);
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
   setInterval(tickElapsed, 1000);
   initDownloads();
   registerSW();
+  Ads.init();
 }
 init();
 </script>
